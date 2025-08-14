@@ -202,6 +202,59 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
           mobileMenu.classList.toggle('hidden');
         });
       }
+
+      // Simple companies carousel without looping
+      const companiesContainer = document.getElementById('companies-container');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      
+      if (companiesContainer && prevBtn && nextBtn) {
+        let currentIndex = 0;
+        const cardWidth = 320 + 32; // card width (w-80 = 320px) + gap (32px)
+        const totalCards = 5;
+        
+        function updateCarousel() {
+          const transform = -currentIndex * cardWidth;
+          companiesContainer.style.transform = `translateX(${transform}px)`;
+          
+          // Update button states
+          prevBtn.disabled = currentIndex === 0;
+          nextBtn.disabled = currentIndex >= totalCards - 1;
+          
+          // Visual feedback for disabled state
+          if (prevBtn.disabled) {
+            prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+          } else {
+            prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+          }
+          
+          if (nextBtn.disabled) {
+            nextBtn.classList.add('opacity-50', 'cursor-not-allowed');
+          } else {
+            nextBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+          }
+        }
+        
+        function nextSlide() {
+          if (currentIndex < totalCards - 1) {
+            currentIndex++;
+            updateCarousel();
+          }
+        }
+        
+        function prevSlide() {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+          }
+        }
+        
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+        
+        // Initialize carousel
+        updateCarousel();
+      }
     </script>
   </body>
 </html>

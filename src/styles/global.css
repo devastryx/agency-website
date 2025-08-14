@@ -82,11 +82,15 @@ p {
 
 /* Layout Utilities */
 .section-padding {
-  @apply py-24 px-6;
+  @apply py-24 px-6; /* Increased padding */
 }
 
 .container-custom {
-  @apply max-w-4xl mx-auto;
+  @apply max-w-4xl mx-auto; /* Back to focused width */
+}
+
+.container-wide {
+  @apply max-w-6xl mx-auto; /* Wider container for credibility strip and stats */
 }
 
 /* Minimal Animations */
@@ -116,6 +120,24 @@ p {
 }
 
 .animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Companies Carousel Animation */
+@keyframes scrollCompanies {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-companies {
+  animation: scrollCompanies 30s linear infinite;
+}
+
+.animate-scroll-companies:hover {
   animation-play-state: paused;
 }
 

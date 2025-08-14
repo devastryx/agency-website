@@ -24,48 +24,94 @@ import Layout from '../layouts/Layout.astro';
   <!-- Credibility Strip -->
   <section class="py-16 overflow-hidden">
     <div class="container-custom">
-      <div class="max-w-4xl mx-auto overflow-hidden">
-        <div class="flex items-center gap-12 animate-scroll">
-          <div class="flex items-center space-x-2 whitespace-nowrap">
-            <div class="w-3 h-3 bg-gray-400 rounded"></div>
-            <span>DialogFlow</span>
+      <div class="overflow-hidden relative">
+        <!-- Left fade gradient -->
+        <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white via-white to-transparent z-10 pointer-events-none"></div>
+        
+        <!-- Right fade gradient -->
+        <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white via-white to-transparent z-10 pointer-events-none"></div>
+        
+        <div class="flex items-center gap-16 animate-scroll">
+          <!-- Original AI/ML technologies as floating logos -->
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/langchain.com" alt="LangChain Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">LangChain</span>
           </div>
-          <div class="flex items-center space-x-2 whitespace-nowrap">
-            <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
-            <span>BERT Labs</span>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/langchain.com" alt="LangGraph Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">LangGraph</span>
           </div>
-          <div class="flex items-center space-x-2 whitespace-nowrap">
-            <div class="w-3 h-3 bg-gray-400 transform rotate-45"></div>
-            <span>NextGen SaaS</span>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/openai.com" alt="OpenAI Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">OpenAI</span>
           </div>
-          <div class="flex items-center space-x-2 whitespace-nowrap">
-            <div class="w-3 h-3 bg-gray-400 rounded"></div>
-            <span>GrowthMart</span>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/anthropic.com" alt="Anthropic Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">Anthropic</span>
           </div>
-          <div class="flex items-center space-x-2 whitespace-nowrap">
-            <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
-            <span>PixelRetail</span>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/deepmind.com" alt="Gemini Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">Gemini</span>
           </div>
-          <!-- Duplicate for seamless loop -->
-          <div class="flex items-center space-x-2 whitespace-nowrap">
-            <div class="w-3 h-3 bg-gray-400 rounded"></div>
-            <span>DialogFlow</span>
+          
+          <div class="flex-shrink-0">
+            <img src="https://www.llamaindex.ai/llamaindex.svg" alt="LlamaIndex Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">LlamaIndex</span>
           </div>
-          <div class="flex items-center space-x-2 whitespace-nowrap">
-            <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
-            <span>BERT Labs</span>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/pinecone.io" alt="Pinecone Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">Pinecone</span>
           </div>
-          <div class="flex items-center space-x-2 whitespace-nowrap">
-            <div class="w-3 h-3 bg-gray-400 transform rotate-45"></div>
-            <span>NextGen SaaS</span>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/facebook.com" alt="FAISS Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">FAISS</span>
           </div>
-          <div class="flex items-center space-x-2 whitespace-nowrap">
-            <div class="w-3 h-3 bg-gray-400 rounded"></div>
-            <span>GrowthMart</span>
+          
+          <!-- Duplicate set for seamless loop -->
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/langchain.com" alt="LangChain Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">LangChain</span>
           </div>
-          <div class="flex items-center space-x-2 whitespace-nowrap">
-            <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
-            <span>PixelRetail</span>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/langchain.com" alt="LangGraph Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">LangGraph</span>
+          </div>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/openai.com" alt="OpenAI Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">OpenAI</span>
+          </div>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/anthropic.com" alt="Anthropic Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">Anthropic</span>
+          </div>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/deepmind.com" alt="Gemini Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">Gemini</span>
+          </div>
+          
+          <div class="flex-shrink-0">
+            <img src="https://www.llamaindex.ai/llamaindex.svg" alt="LlamaIndex Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">LlamaIndex</span>
+          </div>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/pinecone.io" alt="Pinecone Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">Pinecone</span>
+          </div>
+          
+          <div class="flex-shrink-0">
+            <img src="https://logo.clearbit.com/facebook.com" alt="FAISS Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="text-lg font-semibold text-gray-700 hidden">FAISS</span>
           </div>
         </div>
       </div>
@@ -156,29 +202,74 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Social Proof -->
+  <!-- Companies We've Worked At -->
   <section class="section-padding">
     <div class="container-custom">
       <h2 class="text-center mb-4 leading-none tracking-tighter" style="font-size: 40px; font-weight: 700; line-height: 1em; letter-spacing: -0.04em;">Real Results. Real Clients.</h2>
       <p class="text-center mb-12 max-w-3xl mx-auto font-medium" style="font-size: 40px; font-weight: 700; line-height: 1em; letter-spacing: -0.04em; color: rgb(153, 153, 153);">ROI you can prove.</p>
       
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="card">
-          <p class="mb-4">"Our SaaS platform cut support tickets by half after Summit's AI upgrade."</p>
-          <div class="font-semibold text-black">Priya S.</div>
-          <div class="text-gray-600">SaaS Founder</div>
-        </div>
+      <div class="relative max-w-6xl mx-auto">
+        <!-- Navigation Arrows -->
+        <button id="prev-btn" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
         
-        <div class="card">
-          <p class="mb-4">"E-commerce conversions increased 30%, and customers get answers instantly."</p>
-          <div class="font-semibold text-black">Miguel G.</div>
-          <div class="text-gray-600">Growth Lead</div>
-        </div>
+        <button id="next-btn" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
         
-        <div class="card">
-          <p class="mb-4">"We now save 20 hours a week on admin. Highly practical and reliable."</p>
-          <div class="font-semibold text-black">Cathy W.</div>
-          <div class="text-gray-600">Consulting CEO</div>
+        <!-- Company Cards Container -->
+        <div class="overflow-hidden">
+          <div class="flex gap-8 transition-transform duration-300 ease-in-out" id="companies-container">
+                                    <!-- Studio Management LLC -->
+                        <a href="https://studiomgmt.co" target="_blank" rel="noopener noreferrer" class="card text-center group hover:border-gray-300 transition-all duration-200 w-80 h-80 flex-shrink-0 flex flex-col items-center justify-center hover:shadow-lg">
+                          <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+                            <img src="/studio-management-llc-logo.jpeg" alt="Studio Management LLC Logo" class="w-16 h-16 object-contain">
+                          </div>
+                          <h3 class="font-semibold text-black mb-3 text-lg">Studio Management LLC</h3>
+                          <p class="text-gray-600 text-sm px-4">Strategic AI consulting and implementation</p>
+                        </a>
+            
+            <!-- Amazon -->
+            <a href="https://amazon.com" target="_blank" rel="noopener noreferrer" class="card text-center group hover:border-gray-300 transition-all duration-200 w-80 h-80 flex-shrink-0 flex flex-col items-center justify-center hover:shadow-lg">
+              <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <img src="/amazon-logo.png" alt="Amazon Logo" class="w-16 h-16 object-contain">
+              </div>
+              <h3 class="font-semibold text-black mb-3 text-lg">Amazon</h3>
+              <p class="text-gray-600 text-sm px-4">AI automation and workflow optimization</p>
+            </a>
+            
+            <!-- Zomato -->
+            <a href="https://zomato.com" target="_blank" rel="noopener noreferrer" class="card text-center group hover:border-gray-300 transition-all duration-200 w-80 h-80 flex-shrink-0 flex flex-col items-center justify-center hover:shadow-lg">
+              <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <img src="/zomato-logo.png" alt="Zomato Logo" class="w-16 h-16 object-contain">
+              </div>
+              <h3 class="font-semibold text-black mb-3 text-lg">Zomato</h3>
+              <p class="text-gray-600 text-sm px-4">Customer service AI and chatbot solutions</p>
+            </a>
+            
+            <!-- Certa -->
+            <a href="https://certa.ai" target="_blank" rel="noopener noreferrer" class="card text-center group hover:border-gray-300 transition-all duration-200 w-80 h-80 flex-shrink-0 flex flex-col items-center justify-center hover:shadow-lg">
+              <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <img src="/certa-logo.png" alt="Certa Logo" class="w-16 h-16 object-contain">
+              </div>
+              <h3 class="font-semibold text-black mb-3 text-lg">Certa</h3>
+              <p class="text-gray-600 text-sm px-4">AI-powered compliance and automation</p>
+            </a>
+            
+            <!-- Level AI -->
+            <a href="https://thelevel.ai" target="_blank" rel="noopener noreferrer" class="card text-center group hover:border-gray-300 transition-all duration-200 w-80 h-80 flex-shrink-0 flex flex-col items-center justify-center hover:shadow-lg">
+              <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <img src="/level-ai-logo.avif" alt="Level AI Logo" class="w-16 h-16 object-contain">
+              </div>
+              <h3 class="font-semibold text-black mb-3 text-lg">Level AI</h3>
+              <p class="text-gray-600 text-sm px-4">Advanced AI copilot development</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
