@@ -22,28 +22,51 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Credibility Strip -->
-  <section class="py-16">
+  <section class="py-16 overflow-hidden">
     <div class="container-custom">
-      <div class="flex flex-wrap justify-center items-center gap-12 text-gray-500">
-        <div class="flex items-center space-x-2">
-          <div class="w-3 h-3 bg-gray-400 rounded"></div>
-          <span>DialogFlow</span>
-        </div>
-        <div class="flex items-center space-x-2">
-          <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
-          <span>BERT Labs</span>
-        </div>
-        <div class="flex items-center space-x-2">
-          <div class="w-3 h-3 bg-gray-400 transform rotate-45"></div>
-          <span>NextGen SaaS</span>
-        </div>
-        <div class="flex items-center space-x-2">
-          <div class="w-3 h-3 bg-gray-400 rounded"></div>
-          <span>GrowthMart</span>
-        </div>
-        <div class="flex items-center space-x-2">
-          <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
-          <span>PixelRetail</span>
+      <div class="max-w-4xl mx-auto overflow-hidden">
+        <div class="flex items-center gap-12 animate-scroll">
+          <div class="flex items-center space-x-2 whitespace-nowrap">
+            <div class="w-3 h-3 bg-gray-400 rounded"></div>
+            <span>DialogFlow</span>
+          </div>
+          <div class="flex items-center space-x-2 whitespace-nowrap">
+            <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
+            <span>BERT Labs</span>
+          </div>
+          <div class="flex items-center space-x-2 whitespace-nowrap">
+            <div class="w-3 h-3 bg-gray-400 transform rotate-45"></div>
+            <span>NextGen SaaS</span>
+          </div>
+          <div class="flex items-center space-x-2 whitespace-nowrap">
+            <div class="w-3 h-3 bg-gray-400 rounded"></div>
+            <span>GrowthMart</span>
+          </div>
+          <div class="flex items-center space-x-2 whitespace-nowrap">
+            <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
+            <span>PixelRetail</span>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="flex items-center space-x-2 whitespace-nowrap">
+            <div class="w-3 h-3 bg-gray-400 rounded"></div>
+            <span>DialogFlow</span>
+          </div>
+          <div class="flex items-center space-x-2 whitespace-nowrap">
+            <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
+            <span>BERT Labs</span>
+          </div>
+          <div class="flex items-center space-x-2 whitespace-nowrap">
+            <div class="w-3 h-3 bg-gray-400 transform rotate-45"></div>
+            <span>NextGen SaaS</span>
+          </div>
+          <div class="flex items-center space-x-2 whitespace-nowrap">
+            <div class="w-3 h-3 bg-gray-400 rounded"></div>
+            <span>GrowthMart</span>
+          </div>
+          <div class="flex items-center space-x-2 whitespace-nowrap">
+            <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
+            <span>PixelRetail</span>
+          </div>
         </div>
       </div>
     </div>
@@ -77,7 +100,6 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <h2 class="mb-4">AI copilots.</h2>
           <p class="mb-4">Custom assistants tailored for your workflows.</p>
-          <p class="text-black font-medium">From $15K per project.</p>
         </div>
         <div class="bg-gray-100 rounded-xl p-12 flex items-center justify-center">
           <div class="w-16 h-16 bg-white rounded-lg"></div>
@@ -96,7 +118,6 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <h2 class="mb-4">Smart chatbots.</h2>
           <p class="mb-4">24/7 support and lead qualification.</p>
-          <p class="text-black font-medium">From $8K per bot.</p>
         </div>
       </div>
     </div>
@@ -109,7 +130,6 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <h2 class="mb-4">Automation.</h2>
           <p class="mb-4">Multi-step AI-powered processes to save hours daily.</p>
-          <p class="text-black font-medium">From $12K.</p>
         </div>
         <div class="bg-gray-100 rounded-xl p-12 flex items-center justify-center">
           <div class="w-16 h-16 bg-white transform rotate-45"></div>
@@ -139,8 +159,8 @@ import Layout from '../layouts/Layout.astro';
   <!-- Social Proof -->
   <section class="section-padding">
     <div class="container-custom">
-      <h2 class="text-center mb-4">Real Results. Real Clients.</h2>
-      <p class="text-center text-gray-600 mb-12">ROI you can prove.</p>
+      <h2 class="text-center mb-4 leading-none tracking-tighter" style="font-size: 40px; font-weight: 700; line-height: 1em; letter-spacing: -0.04em;">Real Results. Real Clients.</h2>
+      <p class="text-center mb-12 max-w-3xl mx-auto font-medium" style="font-size: 40px; font-weight: 700; line-height: 1em; letter-spacing: -0.04em; color: rgb(153, 153, 153);">ROI you can prove.</p>
       
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="card">
