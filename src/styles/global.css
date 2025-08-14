@@ -1,0 +1,127 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Google Fonts - Inter Variable */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@32,400;32,500;32,600;32,700&display=swap');
+
+/* Custom CSS Variables */
+:root {
+  --color-primary: #000000;
+  --color-secondary: #999999;
+  --color-accent: #F59E0B;
+  --color-charcoal: #374151;
+  --color-light-gray: #F9FAFB;
+  --color-white: #FFFFFF;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  font-weight: 400;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: -0.04em;
+  font-feature-settings: 'cv01' on, 'cv09' on, 'cv11' on, 'cv05' on, 'ss03' on;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  color: var(--color-secondary);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+/* Minimal Button Styles */
+.btn-primary {
+  @apply bg-black text-white font-medium py-4 px-8 rounded-lg transition-all duration-200 hover:bg-gray-800;
+}
+
+.btn-secondary {
+  @apply bg-white text-black font-medium py-4 px-8 rounded-lg border border-black transition-all duration-200 hover:bg-gray-50;
+}
+
+/* Minimal Card Styles */
+.card {
+  @apply bg-white rounded-xl border border-gray-200 p-8;
+}
+
+/* Layout Utilities */
+.section-padding {
+  @apply py-24 px-6;
+}
+
+.container-custom {
+  @apply max-w-4xl mx-auto;
+}
+
+/* Minimal Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Focus States */
+button:focus,
+a:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
