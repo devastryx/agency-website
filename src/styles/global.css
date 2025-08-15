@@ -75,6 +75,10 @@ p {
   @apply bg-white text-black font-medium py-4 px-8 rounded-lg border border-black transition-all duration-200 hover:bg-gray-50;
 }
 
+.btn-accent {
+  @apply bg-orange-600 text-white font-medium py-4 px-8 rounded-lg transition-all duration-200 hover:bg-orange-700;
+}
+
 /* Minimal Card Styles */
 .card {
   @apply bg-white rounded-xl border border-gray-200 p-8;

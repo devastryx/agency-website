@@ -12,7 +12,7 @@ import Layout from '../layouts/Layout.astro';
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="/contact" class="bg-black text-white font-medium py-4 px-8 rounded-lg transition-all duration-200 hover:bg-gray-800">
-          Book Call
+          Book a Call
         </a>
         <a href="/case-studies" class="bg-white text-black font-medium py-4 px-8 rounded-lg border border-black transition-all duration-200 hover:bg-gray-50">
           Success Stories
@@ -124,11 +124,11 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
         <div>
           <div class="text-4xl font-bold text-black mb-2">50+</div>
-          <div class="text-gray-600">Businesses Trusted Us</div>
+          <div class="text-gray-600">Businesses Trust Us</div>
         </div>
         <div>
           <div class="text-4xl font-bold text-black mb-2">40%</div>
-          <div class="text-gray-600">Avg. efficiency gain</div>
+          <div class="text-gray-600">Average efficiency gain</div>
         </div>
         <div>
           <div class="text-4xl font-bold text-black mb-2">90</div>
@@ -138,47 +138,352 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="section-padding">
+  <!-- Enhanced Products Section -->
+  <section class="section-padding bg-white">
     <div class="container-custom">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-        <!-- AI Copilots -->
-        <div>
-          <h2 class="mb-4">AI copilots.</h2>
-          <p class="mb-4">Custom assistants tailored for your workflows.</p>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-6">Our AI Solutions</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We build three core types of AI solutions that transform how businesses operate. Each is crafted with deep technical expertise and strategic product thinking to deliver measurable results.
+        </p>
+      </div>
+
+      <!-- AI Copilots -->
+      <div class="mb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mr-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold text-black">AI Copilots</h3>
+            </div>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Intelligent AI assistants that work alongside your team, understanding your unique business processes and domain knowledge. Built with advanced RAG (Retrieval-Augmented Generation) architectures and fine-tuned on your specific workflows.
+            </p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">Domain-Specific Training</p>
+                  <p class="text-gray-600">Trained on your documents, processes, and institutional knowledge</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">Real-Time Integration</p>
+                  <p class="text-gray-600">Seamlessly connects with your existing tools and databases</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">Enterprise Security</p>
+                  <p class="text-gray-600">Role-based access, audit trails, and data privacy compliance</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-8">
+              <h4 class="font-bold text-blue-900 mb-3">Perfect for:</h4>
+              <div class="grid grid-cols-2 gap-2 text-sm">
+                <span class="text-blue-800">• Sales enablement</span>
+                <span class="text-blue-800">• Customer support</span>
+                <span class="text-blue-800">• Technical documentation</span>
+                <span class="text-blue-800">• Research assistance</span>
+              </div>
+            </div>
+
+            <div class="bg-blue-100 border border-blue-300 rounded-xl p-4 mb-8">
+              <p class="text-blue-900 font-bold text-lg">Starting from $25,000</p>
+              <p class="text-blue-700 text-sm">Custom pricing based on complexity and requirements</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/contact?service=ai-copilots" class="bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 hover:bg-blue-700 text-center">
+                Start Your Copilot
+              </a>
+              <a href="/case-studies" class="bg-white text-blue-600 font-medium py-3 px-6 rounded-lg border border-blue-600 transition-all duration-200 hover:bg-blue-50 text-center">
+                View Case Studies
+              </a>
+            </div>
+          </div>
+          
+          <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-12 flex items-center justify-center h-full min-h-[500px]">
+            <div class="text-center">
+              <div class="w-32 h-32 bg-white rounded-3xl mx-auto mb-6 flex items-center justify-center shadow-lg">
+                <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <p class="text-blue-900 font-semibold text-lg">Intelligent Assistant</p>
+              <p class="text-blue-700 text-sm">Always learning, always helping</p>
+            </div>
+          </div>
         </div>
-        <div class="bg-gray-100 rounded-xl p-12 flex items-center justify-center">
-          <div class="w-16 h-16 bg-white rounded-lg"></div>
+      </div>
+
+      <!-- Smart Chatbots -->
+      <div class="mb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-12 flex items-center justify-center order-2 lg:order-1 h-full min-h-[500px]">
+            <div class="text-center">
+              <div class="w-32 h-32 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
+                <div class="relative">
+                  <svg class="w-16 h-16 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                  </svg>
+                  <div class="absolute -top-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <p class="text-green-900 font-semibold text-lg">Voice & Text Bots</p>
+              <p class="text-green-700 text-sm">24/7 support across all channels</p>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mr-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold text-black">Smart Chatbots</h3>
+            </div>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Conversational AI that handles customer inquiries, qualifies leads, and provides instant support around the clock. We build both voice-based and text-based chatbots with advanced NLP and conversation design principles to maintain your brand voice and deliver exceptional customer experiences.
+            </p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">Intelligent Lead Qualification</p>
+                  <p class="text-gray-600">Captures and qualifies prospects with smart follow-up questions</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">Multi-Platform Deployment</p>
+                  <p class="text-gray-600">Works across web, mobile, WhatsApp, and social media</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">Seamless Human Handoff</p>
+                  <p class="text-gray-600">Smart escalation when human expertise is needed</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-green-50 border border-green-200 rounded-xl p-6 mb-8">
+              <h4 class="font-bold text-green-900 mb-3">Perfect for:</h4>
+              <div class="grid grid-cols-2 gap-2 text-sm">
+                <span class="text-green-800">• E-commerce sites</span>
+                <span class="text-green-800">• SaaS platforms</span>
+                <span class="text-green-800">• Service businesses</span>
+                <span class="text-green-800">• Lead generation</span>
+              </div>
+            </div>
+
+            <div class="bg-green-100 border border-green-300 rounded-xl p-4 mb-8">
+              <p class="text-green-900 font-bold text-lg">Starting from $10,000</p>
+              <p class="text-green-700 text-sm">Voice and text-based solutions available</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/contact?service=chatbots" class="bg-green-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 hover:bg-green-700 text-center">
+                Launch Your Chatbot
+              </a>
+              <a href="/case-studies" class="bg-white text-green-600 font-medium py-3 px-6 rounded-lg border border-green-600 transition-all duration-200 hover:bg-green-50 text-center">
+                See Results
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Automation -->
+      <div class="mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mr-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold text-black">AI Automation</h3>
+            </div>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Sophisticated multi-step AI workflows that eliminate manual tasks and streamline complex business processes. Built with robust error handling, monitoring, and scalability to save your team hours every day while improving accuracy and consistency.
+            </p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">Intelligent Process Mining</p>
+                  <p class="text-gray-600">Analyzes your workflows to identify automation opportunities</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">Cross-Platform Integration</p>
+                  <p class="text-gray-600">Connects disparate systems and automates data flow</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">Advanced Error Handling</p>
+                  <p class="text-gray-600">Self-healing workflows with intelligent fallback mechanisms</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-orange-50 border border-orange-200 rounded-xl p-6 mb-8">
+              <h4 class="font-bold text-orange-900 mb-3">Common Use Cases:</h4>
+              <div class="grid grid-cols-1 gap-2 text-sm">
+                <span class="text-orange-800">• Customer onboarding and account setup</span>
+                <span class="text-orange-800">• Invoice processing and payment workflows</span>
+                <span class="text-orange-800">• Data processing and report generation</span>
+                <span class="text-orange-800">• Inventory management and reordering</span>
+              </div>
+            </div>
+
+            <div class="bg-orange-100 border border-orange-300 rounded-xl p-4 mb-8">
+              <p class="text-orange-900 font-bold text-lg">Starting from $15,000</p>
+              <p class="text-orange-700 text-sm">Multi-step workflow automation solutions</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/contact?service=automation" class="bg-orange-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 hover:bg-orange-700 text-center">
+                Automate Your Workflow
+              </a>
+              <a href="/case-studies" class="bg-white text-orange-600 font-medium py-3 px-6 rounded-lg border border-orange-600 transition-all duration-200 hover:bg-orange-50 text-center">
+                View Examples
+              </a>
+            </div>
+          </div>
+          
+          <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-3xl p-12 flex items-center justify-center h-full min-h-[500px]">
+            <div class="text-center">
+              <div class="w-32 h-32 bg-white rounded-xl mx-auto mb-6 flex items-center justify-center shadow-lg transform rotate-3">
+                <svg class="w-16 h-16 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                </svg>
+              </div>
+              <p class="text-orange-900 font-semibold text-lg">Automated Workflows</p>
+              <p class="text-orange-700 text-sm">Precision at scale</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Smart Chatbots -->
-  <section class="section-padding">
+  <!-- ROI & Impact Section -->
+  <section class="section-padding bg-white">
     <div class="container-custom">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-        <div class="bg-gray-100 rounded-xl p-12 flex items-center justify-center">
-          <div class="w-16 h-16 bg-white rounded-full"></div>
-        </div>
-        <div>
-          <h2 class="mb-4">Smart chatbots.</h2>
-          <p class="mb-4">24/7 support and lead qualification.</p>
-        </div>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-6">Proven ROI & Impact</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          See the measurable impact our AI solutions deliver for businesses like yours
+        </p>
       </div>
-    </div>
-  </section>
 
-  <!-- Automation -->
-  <section class="section-padding">
-    <div class="container-custom">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-        <div>
-          <h2 class="mb-4">Automation.</h2>
-          <p class="mb-4">Multi-step AI-powered processes to save hours daily.</p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- ROI Calculator -->
+        <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200">
+          <h3 class="text-2xl font-bold text-green-900 mb-6 text-center">Chatbot ROI Calculator</h3>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-600">Current support cost/month:</span>
+                <span class="font-semibold text-gray-800">$8,000</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-600">AI chatbot cost/month:</span>
+                <span class="font-semibold text-gray-800">$667</span>
+              </div>
+              <div class="border-t pt-4">
+                <div class="flex justify-between items-center text-xl font-bold text-green-600">
+                  <span>Monthly savings:</span>
+                  <span>$7,333</span>
+                </div>
+              </div>
+              <div class="text-sm text-gray-500 text-center mt-4">
+                *Based on 24/7 support, 1000+ conversations/month
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="bg-gray-100 rounded-xl p-12 flex items-center justify-center">
-          <div class="w-16 h-16 bg-white transform rotate-45"></div>
+
+        <!-- Time Savings -->
+        <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 border border-orange-200">
+          <h3 class="text-2xl font-bold text-orange-900 mb-6 text-center">Automation Impact</h3>
+          <div class="space-y-4">
+            <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div class="text-4xl font-bold text-orange-600 mb-2">20+</div>
+              <div class="text-orange-700 font-medium">Hours saved per week</div>
+            </div>
+            <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div class="text-4xl font-bold text-orange-600 mb-2">80%</div>
+              <div class="text-orange-700 font-medium">Reduction in manual tasks</div>
+            </div>
+            <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div class="text-4xl font-bold text-orange-600 mb-2">99.9%</div>
+              <div class="text-orange-700 font-medium">Process accuracy</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -187,16 +492,16 @@ import Layout from '../layouts/Layout.astro';
   <!-- Why Summit Craft -->
   <section class="section-padding">
     <div class="container-custom">
-      <h2 class="mb-8">Why Summit Craft - Experience That Matters</h2>
+      <h2 class="mb-8">Why Summit Craft – Experience That Matters</h2>
       <div class="space-y-6 max-w-3xl">
         <p>
-          Building AI solutions since 2018 - long before the recent hype. Our expertise comes from real-world deployments, not experiments.
+          We've been building AI solutions since 2018 – long before the recent hype. Our expertise comes from real-world deployments, not experiments.
         </p>
         <p>
-          Founders with top-tier engineering and product experience. We design every solution with ROI as the north star.
+          Our founders bring top-tier engineering and product experience. We design every solution with ROI as the north star.
         </p>
         <p>
-          We know the realities of growing a small company. Every strategy, every model, is crafted to build your business, not just impress with tech.
+          We understand the realities of growing a business. Every strategy and every model is crafted to build your business, not just impress with technology.
         </p>
       </div>
     </div>
@@ -231,7 +536,6 @@ import Layout from '../layouts/Layout.astro';
                             <img src="/studio-management-llc-logo.jpeg" alt="Studio Management LLC Logo" class="w-16 h-16 object-contain">
                           </div>
                           <h3 class="font-semibold text-black mb-3 text-lg">Studio Management LLC</h3>
-                          <p class="text-gray-600 text-sm px-4">Strategic AI consulting and implementation</p>
                         </a>
             
             <!-- Amazon -->
@@ -240,7 +544,6 @@ import Layout from '../layouts/Layout.astro';
                 <img src="/amazon-logo.png" alt="Amazon Logo" class="w-16 h-16 object-contain">
               </div>
               <h3 class="font-semibold text-black mb-3 text-lg">Amazon</h3>
-              <p class="text-gray-600 text-sm px-4">AI automation and workflow optimization</p>
             </a>
             
             <!-- Zomato -->
@@ -249,7 +552,6 @@ import Layout from '../layouts/Layout.astro';
                 <img src="/zomato-logo.png" alt="Zomato Logo" class="w-16 h-16 object-contain">
               </div>
               <h3 class="font-semibold text-black mb-3 text-lg">Zomato</h3>
-              <p class="text-gray-600 text-sm px-4">Customer service AI and chatbot solutions</p>
             </a>
             
             <!-- Certa -->
@@ -258,7 +560,6 @@ import Layout from '../layouts/Layout.astro';
                 <img src="/certa-logo.png" alt="Certa Logo" class="w-16 h-16 object-contain">
               </div>
               <h3 class="font-semibold text-black mb-3 text-lg">Certa</h3>
-              <p class="text-gray-600 text-sm px-4">AI-powered compliance and automation</p>
             </a>
             
             <!-- Level AI -->
@@ -267,7 +568,6 @@ import Layout from '../layouts/Layout.astro';
                 <img src="/level-ai-logo.avif" alt="Level AI Logo" class="w-16 h-16 object-contain">
               </div>
               <h3 class="font-semibold text-black mb-3 text-lg">Level AI</h3>
-              <p class="text-gray-600 text-sm px-4">Advanced AI copilot development</p>
             </a>
           </div>
         </div>
@@ -275,25 +575,342 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Simple Process -->
-  <section class="section-padding">
+  <!-- How We Work Process -->
+  <section class="section-padding bg-gray-50">
     <div class="container-custom">
-      <h2 class="mb-8">How We Work - A Simple Path to Results</h2>
-      
-      <div class="space-y-8">
-        <div>
-          <h3 class="mb-2">DISCOVER: Week 1.</h3>
-          <p>We learn your business, spot AI opportunities, and define clear goals for your ROI.</p>
-        </div>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-6">How We Work</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          A proven path to transformation that combines deep technical expertise with strategic business thinking
+        </p>
+      </div>
+
+      <!-- Process Timeline -->
+      <div class="relative max-w-6xl mx-auto">
+        <!-- Connecting Line -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-green-500 via-orange-500 via-purple-500 via-red-500 to-indigo-500 hidden lg:block"></div>
         
-        <div>
-          <h3 class="mb-2">DESIGN & BUILD: Weeks 2-8.</h3>
-          <p>Blueprints, prototypes, and the full build of your AI solution—always results-focused.</p>
+        <!-- Step 1: DISCOVER -->
+        <div class="relative mb-16">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <!-- Content Left -->
+            <div class="lg:text-right lg:pr-16">
+              <div class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full mb-4">
+                <div class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-sm font-bold">1</span>
+                </div>
+                <span class="font-bold text-lg">DISCOVER</span>
+              </div>
+              <h3 class="text-2xl font-bold text-black mb-4">Comprehensive Business Assessment</h3>
+              <div class="space-y-3 text-gray-600">
+                <div class="flex items-start lg:justify-end">
+                  <div class="lg:text-right">
+                    <p class="font-semibold text-gray-800">Stakeholder Interviews & Process Mapping</p>
+                    <p class="text-sm">Understanding your unique challenges and workflows</p>
+                  </div>
+                  <div class="w-2 h-2 bg-blue-500 rounded-full ml-3 lg:ml-0 lg:mr-3 mt-2 flex-shrink-0"></div>
+                </div>
+                <div class="flex items-start lg:justify-end">
+                  <div class="lg:text-right">
+                    <p class="font-semibold text-gray-800">Data Audits & Infrastructure Evaluation</p>
+                    <p class="text-sm">Technical assessments to identify AI opportunities</p>
+                  </div>
+                  <div class="w-2 h-2 bg-blue-500 rounded-full ml-3 lg:ml-0 lg:mr-3 mt-2 flex-shrink-0"></div>
+                </div>
+                <div class="flex items-start lg:justify-end">
+                  <div class="lg:text-right">
+                    <p class="font-semibold text-gray-800">ROI Projections & Strategic Roadmap</p>
+                    <p class="text-sm">Clear success metrics aligned with business goals</p>
+                  </div>
+                  <div class="w-2 h-2 bg-blue-500 rounded-full ml-3 lg:ml-0 lg:mr-3 mt-2 flex-shrink-0"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Visual Right -->
+            <div class="flex justify-center lg:pl-16">
+              <div class="w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <div>
-          <h3 class="mb-2">DEPLOY: Weeks 9-10.</h3>
-          <p>We launch, train your team, and optimize—so you see value fast.</p>
+
+        <!-- Step 2: STRATEGIZE -->
+        <div class="relative mb-16">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <!-- Visual Left -->
+            <div class="flex justify-center lg:pr-16 order-2 lg:order-1">
+              <div class="w-32 h-32 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+              </div>
+            </div>
+            <!-- Content Right -->
+            <div class="lg:pl-16 order-1 lg:order-2">
+              <div class="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-full mb-4">
+                <div class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-sm font-bold">2</span>
+                </div>
+                <span class="font-bold text-lg">STRATEGIZE</span>
+              </div>
+              <h3 class="text-2xl font-bold text-black mb-4">Tailored Solution Architecture</h3>
+              <div class="space-y-3 text-gray-600">
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-green-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-gray-800">Technical Specifications & UX Design</p>
+                    <p class="text-sm">Detailed blueprints for seamless system integration</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-green-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-gray-800">Security Protocols & Compliance</p>
+                    <p class="text-sm">Enterprise-grade security and regulatory frameworks</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-green-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-gray-800">Risk Assessment & Resource Planning</p>
+                    <p class="text-sm">Comprehensive project blueprints for stakeholder approval</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: BUILD -->
+        <div class="relative mb-16">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <!-- Content Left -->
+            <div class="lg:text-right lg:pr-16">
+              <div class="inline-flex items-center bg-orange-600 text-white px-6 py-3 rounded-full mb-4">
+                <div class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-sm font-bold">3</span>
+                </div>
+                <span class="font-bold text-lg">BUILD</span>
+              </div>
+              <h3 class="text-2xl font-bold text-black mb-4">Custom AI Development</h3>
+              <div class="space-y-3 text-gray-600">
+                <div class="flex items-start lg:justify-end">
+                  <div class="lg:text-right">
+                    <p class="font-semibold text-gray-800">Prototype Development & Early Validation</p>
+                    <p class="text-sm">Industry-leading practices and proven methodologies</p>
+                  </div>
+                  <div class="w-2 h-2 bg-orange-500 rounded-full ml-3 lg:ml-0 lg:mr-3 mt-2 flex-shrink-0"></div>
+                </div>
+                <div class="flex items-start lg:justify-end">
+                  <div class="lg:text-right">
+                    <p class="font-semibold text-gray-800">Robust Integrations & Testing</p>
+                    <p class="text-sm">Rigorous testing across multiple environments</p>
+                  </div>
+                  <div class="w-2 h-2 bg-orange-500 rounded-full ml-3 lg:ml-0 lg:mr-3 mt-2 flex-shrink-0"></div>
+                </div>
+                <div class="flex items-start lg:justify-end">
+                  <div class="lg:text-right">
+                    <p class="font-semibold text-gray-800">Continuous Stakeholder Communication</p>
+                    <p class="text-sm">Iterative feedback loops to exceed expectations</p>
+                  </div>
+                  <div class="w-2 h-2 bg-orange-500 rounded-full ml-3 lg:ml-0 lg:mr-3 mt-2 flex-shrink-0"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Visual Right -->
+            <div class="flex justify-center lg:pl-16">
+              <div class="w-32 h-32 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: VALIDATE -->
+        <div class="relative mb-16">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <!-- Visual Left -->
+            <div class="flex justify-center lg:pr-16 order-2 lg:order-1">
+              <div class="w-32 h-32 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+            </div>
+            <!-- Content Right -->
+            <div class="lg:pl-16 order-1 lg:order-2">
+              <div class="inline-flex items-center bg-purple-600 text-white px-6 py-3 rounded-full mb-4">
+                <div class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-sm font-bold">4</span>
+                </div>
+                <span class="font-bold text-lg">VALIDATE</span>
+              </div>
+              <h3 class="text-2xl font-bold text-black mb-4">Comprehensive Testing & Refinement</h3>
+              <div class="space-y-3 text-gray-600">
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-purple-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-gray-800">Pilot Testing & User Experience Refinement</p>
+                    <p class="text-sm">Select user groups validate functionality and UX</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-purple-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-gray-800">Security Audits & Stress Testing</p>
+                    <p class="text-sm">Comprehensive compliance and performance verification</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-purple-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-gray-800">User Acceptance & Final Optimization</p>
+                    <p class="text-sm">Performance tuning and stakeholder sign-off</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5: DEPLOY -->
+        <div class="relative mb-16">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <!-- Content Left -->
+            <div class="lg:text-right lg:pr-16">
+              <div class="inline-flex items-center bg-red-600 text-white px-6 py-3 rounded-full mb-4">
+                <div class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-sm font-bold">5</span>
+                </div>
+                <span class="font-bold text-lg">DEPLOY</span>
+              </div>
+              <h3 class="text-2xl font-bold text-black mb-4">Seamless Rollout & Training</h3>
+              <div class="space-y-3 text-gray-600">
+                <div class="flex items-start lg:justify-end">
+                  <div class="lg:text-right">
+                    <p class="font-semibold text-gray-800">Orchestrated Launch & Minimal Disruption</p>
+                    <p class="text-sm">Carefully planned rollouts with business continuity</p>
+                  </div>
+                  <div class="w-2 h-2 bg-red-500 rounded-full ml-3 lg:ml-0 lg:mr-3 mt-2 flex-shrink-0"></div>
+                </div>
+                <div class="flex items-start lg:justify-end">
+                  <div class="lg:text-right">
+                    <p class="font-semibold text-gray-800">Comprehensive Training & Documentation</p>
+                    <p class="text-sm">Hands-on support during team transition</p>
+                  </div>
+                  <div class="w-2 h-2 bg-red-500 rounded-full ml-3 lg:ml-0 lg:mr-3 mt-2 flex-shrink-0"></div>
+                </div>
+                <div class="flex items-start lg:justify-end">
+                  <div class="lg:text-right">
+                    <p class="font-semibold text-gray-800">Monitoring & Performance Dashboards</p>
+                    <p class="text-sm">Real-time tracking of success metrics from day one</p>
+                  </div>
+                  <div class="w-2 h-2 bg-red-500 rounded-full ml-3 lg:ml-0 lg:mr-3 mt-2 flex-shrink-0"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Visual Right -->
+            <div class="flex justify-center lg:pl-16">
+              <div class="w-32 h-32 bg-gradient-to-br from-red-100 to-red-200 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6: OPTIMIZE -->
+        <div class="relative">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <!-- Visual Left -->
+            <div class="flex justify-center lg:pr-16 order-2 lg:order-1">
+              <div class="w-32 h-32 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                </svg>
+              </div>
+            </div>
+            <!-- Content Right -->
+            <div class="lg:pl-16 order-1 lg:order-2">
+              <div class="inline-flex items-center bg-indigo-600 text-white px-6 py-3 rounded-full mb-4">
+                <div class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-sm font-bold">6</span>
+                </div>
+                <span class="font-bold text-lg">OPTIMIZE</span>
+              </div>
+              <h3 class="text-2xl font-bold text-black mb-4">Ongoing Enhancement & Growth</h3>
+              <div class="space-y-3 text-gray-600">
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-indigo-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-gray-800">Performance Analysis & System Optimization</p>
+                    <p class="text-sm">Continuous improvement and strategic enhancements</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-indigo-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-gray-800">Regular Insights & Expansion Opportunities</p>
+                    <p class="text-sm">Data-driven recommendations for business growth</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-indigo-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-gray-800">Evolving Solutions & Maximum Value</p>
+                    <p class="text-sm">AI solutions that adapt as your business grows</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Summary -->
+      <div class="mt-16 bg-white rounded-2xl p-8 shadow-lg">
+        <div class="text-center mb-8">
+          <h3 class="text-2xl font-bold text-black mb-2">Typical Timeline</h3>
+          <p class="text-gray-600">From discovery to deployment and beyond</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-4 text-center">
+          <div class="p-4 bg-blue-50 rounded-lg">
+            <div class="text-2xl font-bold text-blue-600 mb-1">1-2</div>
+            <div class="text-sm text-blue-800 font-medium">WEEKS</div>
+            <div class="text-xs text-gray-600 mt-1">Discover</div>
+          </div>
+          <div class="p-4 bg-green-50 rounded-lg">
+            <div class="text-2xl font-bold text-green-600 mb-1">2-3</div>
+            <div class="text-sm text-green-800 font-medium">WEEKS</div>
+            <div class="text-xs text-gray-600 mt-1">Strategize</div>
+          </div>
+          <div class="p-4 bg-orange-50 rounded-lg">
+            <div class="text-2xl font-bold text-orange-600 mb-1">6-8</div>
+            <div class="text-sm text-orange-800 font-medium">WEEKS</div>
+            <div class="text-xs text-gray-600 mt-1">Build</div>
+          </div>
+          <div class="p-4 bg-purple-50 rounded-lg">
+            <div class="text-2xl font-bold text-purple-600 mb-1">2-3</div>
+            <div class="text-sm text-purple-800 font-medium">WEEKS</div>
+            <div class="text-xs text-gray-600 mt-1">Validate</div>
+          </div>
+          <div class="p-4 bg-red-50 rounded-lg">
+            <div class="text-2xl font-bold text-red-600 mb-1">1-2</div>
+            <div class="text-sm text-red-800 font-medium">WEEKS</div>
+            <div class="text-xs text-gray-600 mt-1">Deploy</div>
+          </div>
+          <div class="p-4 bg-indigo-50 rounded-lg">
+            <div class="text-2xl font-bold text-indigo-600 mb-1">∞</div>
+            <div class="text-sm text-indigo-800 font-medium">ONGOING</div>
+            <div class="text-xs text-gray-600 mt-1">Optimize</div>
+          </div>
         </div>
       </div>
     </div>
@@ -303,7 +920,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="section-padding">
     <div class="container-custom text-center">
       <h2 class="mb-6">Ready to Reach Your Summit?</h2>
-      <p class="text-xl text-gray-600 mb-8">Book a free call—we'll pinpoint 3 AI opportunities.</p>
+      <p class="text-xl text-gray-600 mb-8">Book a free call—we'll pinpoint three AI opportunities.</p>
       <a href="/contact" class="bg-black text-white font-medium py-4 px-8 rounded-lg transition-all duration-200 hover:bg-gray-800">
         Book Strategy Call
       </a>

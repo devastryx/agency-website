@@ -2,90 +2,141 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout 
-  title="Case Studies - Summit Craft | Real AI Results from Real Businesses"
-  description="See how our AI solutions have delivered measurable results: 50% reduction in support tickets, 30% increase in conversions, and 20+ hours saved weekly."
->
+<Layout title="Case Studies - Real AI Impact | Summit Craft">
   <!-- Hero Section -->
-  <section class="section-padding bg-gradient-to-br from-neutral-50 to-white">
-    <div class="container-custom text-center">
-      <h1 class="text-4xl md:text-6xl font-bold text-primary-800 mb-6">
-        Real Results from Real Businesses
-      </h1>
-      <p class="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
-        See how our AI solutions have transformed operations, improved customer experience, and delivered measurable ROI for businesses like yours.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/contact" class="btn-primary text-lg px-8 py-4">
-          Get Similar Results
-        </a>
-        <a href="/services" class="btn-secondary text-lg px-8 py-4">
-          Explore Services
-        </a>
+  <section class="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-6">
+          <span class="text-sm font-medium">Real Results. Real Impact.</span>
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white">
+          Where AI Meets <span class="text-accent-300">Business Reality</span>
+        </h1>
+        <p class="text-xl text-primary-100 mb-8 leading-relaxed">
+          Every solution we build drives measurable business outcomes. Here's how we've transformed workflows, 
+          eliminated bottlenecks, and delivered millions in value across diverse industries.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+            <div class="text-3xl font-bold text-accent-300">$12M+</div>
+            <div class="text-primary-100">Value Delivered</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+            <div class="text-3xl font-bold text-accent-300">89%</div>
+            <div class="text-primary-100">Avg. Efficiency Gain</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+            <div class="text-3xl font-bold text-accent-300">48hrs</div>
+            <div class="text-primary-100">Avg. Implementation</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Featured Case Study -->
-  <section class="section-padding bg-white">
-    <div class="container-custom">
-      <div class="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-3xl p-8 md:p-12">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="inline-block bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-              Featured Case Study
+  <section class="py-20 bg-gradient-to-r from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center bg-accent-100 text-accent-800 rounded-full px-4 py-2 text-sm font-medium mb-4">
+          ⭐ Featured Success Story
+        </div>
+        <h2 class="text-4xl font-bold text-primary-800 mb-4">Engineering Team Breakthrough</h2>
+        <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+          How a fast-scaling SaaS team eliminated critical bug delays and transformed their development workflow
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+        <div class="grid lg:grid-cols-2 gap-0">
+          <!-- Content Side -->
+          <div class="p-12 lg:p-16">
+            <div class="inline-flex items-center bg-blue-100 text-blue-800 rounded-full px-4 py-2 text-sm font-medium mb-6">
+              🚀 Tech Startup
             </div>
-            <h2 class="text-3xl md:text-4xl font-bold text-primary-800 mb-6">
-              SaaS Startup: 50% Reduction in Support Tickets
-            </h2>
-            <p class="text-lg text-neutral-600 mb-6">
-              A growing SaaS company was drowning in customer support requests. Their team was spending 60+ hours weekly on repetitive inquiries, limiting their ability to focus on product development and growth.
+            
+            <h3 class="text-3xl font-bold text-primary-800 mb-6">
+              80% Faster Bug Resolution in Slack
+            </h3>
+            
+            <p class="text-lg text-neutral-600 mb-8 leading-relaxed">
+              A fast-scaling SaaS team struggled with bug reports buried in Slack channels. Engineers often missed critical issues or discovered them too late, delaying fixes and frustrating customers.
             </p>
-            
+
+            <!-- Impact Metrics -->
             <div class="grid grid-cols-2 gap-6 mb-8">
-              <div class="text-center">
-                <div class="text-3xl font-bold text-secondary-600">50%</div>
-                <div class="text-sm text-neutral-600">Reduction in tickets</div>
+              <div class="text-center bg-blue-50 rounded-2xl p-6">
+                <div class="text-4xl font-bold text-blue-600 mb-2">80%</div>
+                <div class="text-sm text-neutral-600">Faster bug triage</div>
               </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold text-accent-600">60+</div>
-                <div class="text-sm text-neutral-600">Hours saved weekly</div>
-              </div>
-            </div>
-            
-            <div class="space-y-3 mb-8">
-              <div class="flex items-center space-x-3">
-                <div class="w-5 h-5 bg-primary-600 rounded-full flex-shrink-0"></div>
-                <span class="text-neutral-700">Custom AI chatbot trained on product documentation</span>
-              </div>
-              <div class="flex items-center space-x-3">
-                <div class="w-5 h-5 bg-primary-600 rounded-full flex-shrink-0"></div>
-                <span class="text-neutral-700">Integration with existing help desk system</span>
-              </div>
-              <div class="flex items-center space-x-3">
-                <div class="w-5 h-5 bg-primary-600 rounded-full flex-shrink-0"></div>
-                <span class="text-neutral-700">24/7 automated support coverage</span>
+              <div class="text-center bg-green-50 rounded-2xl p-6">
+                <div class="text-4xl font-bold text-green-600 mb-2">90%</div>
+                <div class="text-sm text-neutral-600">Reduction in missed critical issues</div>
               </div>
             </div>
-            
-            <a href="/contact?service=chatbots" class="btn-primary">
-              Get Similar Results
-            </a>
+
+            <!-- Solution -->
+            <div class="mb-8">
+              <h4 class="font-bold text-primary-800 mb-4 text-lg">🛠️ What We Built</h4>
+              <div class="space-y-3">
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></div>
+                  <span class="text-neutral-700">AI-powered Slack copilot that monitored channels for bug-related chatter</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></div>
+                  <span class="text-neutral-700">NLP to detect bug reports, auto-tag severity, and assign owners</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></div>
+                  <span class="text-neutral-700">Integrated with Jira for instant ticket creation and status tracking</span>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></div>
+                  <span class="text-neutral-700">Added guardrails to avoid false positives by confirming with reporters</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="bg-gray-50 rounded-2xl p-6 mb-8">
+              <h4 class="font-bold text-gray-800 mb-3 text-sm">⚡ Tech Stack</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-white text-gray-700 px-3 py-1 rounded-full text-sm">Slack Events API</span>
+                <span class="bg-white text-gray-700 px-3 py-1 rounded-full text-sm">LangChain</span>
+                <span class="bg-white text-gray-700 px-3 py-1 rounded-full text-sm">OpenAI API</span>
+                <span class="bg-white text-gray-700 px-3 py-1 rounded-full text-sm">LLamaIndex</span>
+                <span class="bg-white text-gray-700 px-3 py-1 rounded-full text-sm">Jira API</span>
+                <span class="bg-white text-gray-700 px-3 py-1 rounded-full text-sm">Pinecone</span>
+                <span class="bg-white text-gray-700 px-3 py-1 rounded-full text-sm">FastAPI</span>
+              </div>
+            </div>
+
+            <!-- Testimonial -->
+            <div class="bg-blue-50 rounded-2xl p-6">
+              <blockquote class="text-lg text-blue-900 italic mb-4">
+                "Bugs no longer slip through the cracks. The Slack copilot has made our triage process lightning fast and incredibly accurate."
+              </blockquote>
+              <div class="flex items-center">
+                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-blue-800 font-bold text-sm">TS</span>
+                </div>
+                <div>
+                  <div class="font-medium text-blue-900">Tech Startup CTO</div>
+                  <div class="text-sm text-blue-600">Engineering Leadership</div>
+                </div>
+              </div>
+            </div>
           </div>
-          
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 class="text-xl font-bold text-primary-800 mb-4">Client Testimonial</h3>
-            <blockquote class="text-lg text-neutral-700 mb-6 italic">
-              "Our SaaS platform cut support tickets by half after Summit's AI upgrade. The chatbot handles 80% of common questions, and our team can focus on complex issues and product development."
-            </blockquote>
-            <div class="flex items-center space-x-4">
-              <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                <span class="text-primary-800 font-bold">PS</span>
-              </div>
-              <div>
-                <p class="font-bold text-primary-800">Priya S.</p>
-                <p class="text-neutral-600">SaaS Founder</p>
-              </div>
+
+          <!-- Visual Side -->
+          <div class="bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center p-12 relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+            <div class="relative z-10 text-center">
+              <div class="text-8xl mb-6">🚀</div>
+              <div class="text-white/90 text-xl font-medium mb-2">Real-time Bug Detection</div>
+              <div class="text-white/70">Slack → AI → Jira</div>
             </div>
           </div>
         </div>
@@ -93,267 +144,374 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Case Studies Grid -->
-  <section class="section-padding bg-neutral-50">
-    <div class="container-custom">
+  <!-- All Case Studies Grid -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-primary-800 mb-4">
-          More Success Stories
-        </h2>
-        <p class="text-xl text-neutral-600">
-          Discover how AI has transformed businesses across different industries
+        <h2 class="text-4xl font-bold text-primary-800 mb-4">More Success Stories</h2>
+        <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+          From productivity gains to cost savings, see how we've delivered transformational AI solutions across industries
         </p>
       </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- E-commerce Case Study -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div class="h-48 bg-gradient-to-br from-secondary-100 to-secondary-200 flex items-center justify-center">
-            <span class="text-6xl">🛒</span>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Productivity SaaS Case Study -->
+        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-200">
+          <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-blue-600/20 group-hover:from-blue-400/30 group-hover:to-blue-600/30 transition-all duration-300"></div>
+            <span class="text-6xl relative z-10 group-hover:scale-110 transition-transform duration-300">📧</span>
           </div>
-          <div class="p-6">
-            <div class="inline-block bg-secondary-100 text-secondary-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-              E-commerce
+          <div class="p-8">
+            <div class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+              Productivity SaaS
             </div>
-            <h3 class="text-xl font-bold text-primary-800 mb-3">
-              30% Increase in Conversion Rates
+            <h3 class="text-xl font-bold text-primary-800 mb-3 group-hover:text-blue-600 transition-colors">
+              74% Less Inbox Clutter with Email Copilot
             </h3>
-            <p class="text-neutral-600 mb-4">
-              An e-commerce site implemented AI-powered product recommendations and personalized customer support, resulting in significant revenue growth.
+            <p class="text-neutral-600 mb-6 leading-relaxed">
+              Professionals drowning in unimportant emails, spending hours manually cleaning their inbox with important messages lost in the noise.
             </p>
             
             <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="text-center">
-                <div class="text-2xl font-bold text-secondary-600">30%</div>
-                <div class="text-xs text-neutral-600">Conversion increase</div>
+              <div class="text-center bg-blue-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-blue-600">74%</div>
+                <div class="text-xs text-neutral-600">Inbox clutter reduction</div>
               </div>
-              <div class="text-center">
-                <div class="text-2xl font-bold text-accent-600">24/7</div>
-                <div class="text-xs text-neutral-600">Support coverage</div>
+              <div class="text-center bg-green-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-green-600">3+hrs</div>
+                <div class="text-xs text-neutral-600">Weekly time saved</div>
               </div>
             </div>
-            
-            <a href="/contact?service=chatbots" class="btn-secondary w-full text-center">
-              Learn More
-            </a>
+
+            <div class="space-y-2 mb-6">
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">AI email classification (Important vs Low Priority)</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Auto-archive OTPs, alerts, password resets</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">One-click rules for blocking and starring</span>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-3 mb-6">
+              <div class="text-xs font-medium text-gray-700 mb-1">Tech Stack</div>
+              <div class="text-xs text-gray-600">Gmail API · LangChain · OpenAI API · Google Cloud Functions</div>
+            </div>
+
+            <blockquote class="text-sm text-blue-800 italic bg-blue-50 rounded-lg p-4">
+              "Emailzap has completely changed the way I work. My inbox finally reflects my priorities."
+            </blockquote>
           </div>
         </div>
-        
-        <!-- Consulting Case Study -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div class="h-48 bg-gradient-to-br from-accent-100 to-accent-200 flex items-center justify-center">
-            <span class="text-6xl">💼</span>
+
+        <!-- Recruitment Agency Case Study -->
+        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-purple-200">
+          <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-purple-600/20 group-hover:from-purple-400/30 group-hover:to-purple-600/30 transition-all duration-300"></div>
+            <span class="text-6xl relative z-10 group-hover:scale-110 transition-transform duration-300">👥</span>
           </div>
-          <div class="p-6">
-            <div class="inline-block bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-              Consulting
+          <div class="p-8">
+            <div class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+              Recruitment Agency
             </div>
-            <h3 class="text-xl font-bold text-primary-800 mb-3">
-              20 Hours Saved Weekly on Admin
+            <h3 class="text-xl font-bold text-primary-800 mb-3 group-hover:text-purple-600 transition-colors">
+              5x Faster Candidate Screening
             </h3>
-            <p class="text-neutral-600 mb-4">
-              A consulting firm automated client onboarding, proposal generation, and invoice processing, freeing up valuable time for client work.
+            <p class="text-neutral-600 mb-6 leading-relaxed">
+              Growing recruitment agency manually reviewing hundreds of resumes daily, slowing client response times and reducing placement rates.
             </p>
             
             <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="text-center">
-                <div class="text-2xl font-bold text-accent-600">20+</div>
-                <div class="text-xs text-neutral-600">Hours saved weekly</div>
+              <div class="text-center bg-purple-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-purple-600">5x</div>
+                <div class="text-xs text-neutral-600">Faster screening</div>
               </div>
-              <div class="text-center">
-                <div class="text-2xl font-bold text-secondary-600">99.9%</div>
-                <div class="text-xs text-neutral-600">Process accuracy</div>
+              <div class="text-center bg-green-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-green-600">60%</div>
+                <div class="text-xs text-neutral-600">Quality candidate increase</div>
               </div>
             </div>
-            
-            <a href="/contact?service=automation" class="btn-accent w-full text-center">
-              Learn More
-            </a>
+
+            <div class="space-y-2 mb-6">
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">AI resume parsing and job matching</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Skill-based ranking and experience scoring</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Bias checks for fair evaluation</span>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-3 mb-6">
+              <div class="text-xs font-medium text-gray-700 mb-1">Tech Stack</div>
+              <div class="text-xs text-gray-600">LangChain · OpenAI API · Google Cloud Vision · LinkedIn API</div>
+            </div>
+
+            <blockquote class="text-sm text-purple-800 italic bg-purple-50 rounded-lg p-4">
+              "The recruiter copilot has given us a competitive edge. We respond to clients in hours, not days."
+            </blockquote>
           </div>
         </div>
-        
+
+        <!-- EdTech App Case Study -->
+        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-green-200">
+          <div class="h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-green-400/20 to-green-600/20 group-hover:from-green-400/30 group-hover:to-green-600/30 transition-all duration-300"></div>
+            <span class="text-6xl relative z-10 group-hover:scale-110 transition-transform duration-300">📚</span>
+          </div>
+          <div class="p-8">
+            <div class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+              EdTech App
+            </div>
+            <h3 class="text-xl font-bold text-primary-800 mb-3 group-hover:text-green-600 transition-colors">
+              Safe Screen Time with Parent Copilot
+            </h3>
+            <p class="text-neutral-600 mb-6 leading-relaxed">
+              Parents wanting safe educational content for kids but lacking control over video recommendations and visibility into learning progress.
+            </p>
+            
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="text-center bg-green-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-green-600">100%</div>
+                <div class="text-xs text-neutral-600">Parent-controlled curation</div>
+              </div>
+              <div class="text-center bg-blue-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-blue-600">Weekly</div>
+                <div class="text-xs text-neutral-600">Learning reports</div>
+              </div>
+            </div>
+
+            <div class="space-y-2 mb-6">
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Safe, age-appropriate video curation</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Personalized learning recommendations</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Progress tracking and reporting</span>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-3 mb-6">
+              <div class="text-xs font-medium text-gray-700 mb-1">Tech Stack</div>
+              <div class="text-xs text-gray-600">YouTube Data API · Firebase · Whisper · React Native</div>
+            </div>
+
+            <blockquote class="text-sm text-green-800 italic bg-green-50 rounded-lg p-4">
+              "I finally feel confident about my child's screen time. The Parent Copilot makes learning safe and fun."
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Enterprise Team Case Study -->
+        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-emerald-200">
+          <div class="h-48 bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-emerald-400/20 to-emerald-600/20 group-hover:from-emerald-400/30 group-hover:to-emerald-600/30 transition-all duration-300"></div>
+            <span class="text-6xl relative z-10 group-hover:scale-110 transition-transform duration-300">📊</span>
+          </div>
+          <div class="p-8">
+            <div class="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+              Enterprise Team
+            </div>
+            <h3 class="text-xl font-bold text-primary-800 mb-3 group-hover:text-emerald-600 transition-colors">
+              Automating Analysis in Google Sheets
+            </h3>
+            <p class="text-neutral-600 mb-6 leading-relaxed">
+              Analysts copying data into ChatGPT manually to generate insights, wasting hours and risking data leaks with external tools.
+            </p>
+            
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="text-center bg-emerald-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-emerald-600">90%</div>
+                <div class="text-xs text-neutral-600">Faster analysis</div>
+              </div>
+              <div class="text-center bg-red-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-red-600">Zero</div>
+                <div class="text-xs text-neutral-600">Manual copy-paste</div>
+              </div>
+            </div>
+
+            <div class="space-y-2 mb-6">
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Natural language prompts in Sheets</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Custom AI formulas (=TestPrompt)</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Cost tracking and usage limits</span>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-3 mb-6">
+              <div class="text-xs font-medium text-gray-700 mb-1">Tech Stack</div>
+              <div class="text-xs text-gray-600">Google Apps Script · OpenAI API · Workspace Marketplace SDK</div>
+            </div>
+
+            <blockquote class="text-sm text-emerald-800 italic bg-emerald-50 rounded-lg p-4">
+              "Our team now runs deep analysis without leaving Sheets. It's fast, secure, and budget-friendly."
+            </blockquote>
+          </div>
+        </div>
+
         <!-- Healthcare Case Study -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div class="h-48 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
-            <span class="text-6xl">🏥</span>
+        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-teal-200">
+          <div class="h-48 bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-teal-400/20 to-teal-600/20 group-hover:from-teal-400/30 group-hover:to-teal-600/30 transition-all duration-300"></div>
+            <span class="text-6xl relative z-10 group-hover:scale-110 transition-transform duration-300">🏥</span>
           </div>
-          <div class="p-6">
-            <div class="inline-block bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+          <div class="p-8">
+            <div class="inline-block bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
               Healthcare
             </div>
-            <h3 class="text-xl font-bold text-primary-800 mb-3">
+            <h3 class="text-xl font-bold text-primary-800 mb-3 group-hover:text-teal-600 transition-colors">
               AI-Powered Patient Scheduling
             </h3>
-            <p class="text-neutral-600 mb-4">
-              A medical practice implemented intelligent scheduling that reduced no-shows by 40% and improved patient satisfaction scores.
+            <p class="text-neutral-600 mb-6 leading-relaxed">
+              Busy medical practice struggling with scheduling conflicts, frequent no-shows, and inefficient appointment management frustrating staff and patients.
             </p>
             
             <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="text-center">
-                <div class="text-2xl font-bold text-primary-600">40%</div>
-                <div class="text-xs text-neutral-600">Fewer no-shows</div>
+              <div class="text-center bg-teal-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-teal-600">40%</div>
+                <div class="text-xs text-neutral-600">Reduction in no-shows</div>
               </div>
-              <div class="text-center">
-                <div class="text-2xl font-bold text-secondary-600">85%</div>
+              <div class="text-center bg-green-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-green-600">85%</div>
                 <div class="text-xs text-neutral-600">Patient satisfaction</div>
               </div>
             </div>
-            
-            <a href="/contact?service=ai-copilots" class="btn-primary w-full text-center">
-              Learn More
-            </a>
+
+            <div class="space-y-2 mb-6">
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Smart scheduling based on patient history</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Automated personalized reminders</span>
+              </div>
+              <div class="flex items-start space-x-2">
+                <div class="w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-neutral-700">Predictive rescheduling optimization</span>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-3 mb-6">
+              <div class="text-xs font-medium text-gray-700 mb-1">Tech Stack</div>
+              <div class="text-xs text-gray-600">Calendly API · Twilio · Google Calendar API · PostgreSQL</div>
+            </div>
+
+            <blockquote class="text-sm text-teal-800 italic bg-teal-50 rounded-lg p-4">
+              "Our practice runs so much smoother now. Patients love the smart reminders and our schedule utilization has never been better."
+            </blockquote>
           </div>
         </div>
-        
-        <!-- Manufacturing Case Study -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div class="h-48 bg-gradient-to-br from-neutral-100 to-neutral-200 flex items-center justify-center">
-            <span class="text-6xl">🏭</span>
-          </div>
-          <div class="p-6">
-            <div class="inline-block bg-neutral-100 text-neutral-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-              Manufacturing
-            </div>
-            <h3 class="text-xl font-bold text-primary-800 mb-3">
-              Predictive Maintenance System
-            </h3>
-            <p class="text-neutral-600 mb-4">
-              A manufacturing company implemented AI-powered equipment monitoring, reducing downtime by 60% and saving $500K annually.
-            </p>
-            
-            <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="text-center">
-                <div class="text-2xl font-bold text-neutral-600">60%</div>
-                <div class="text-xs text-neutral-600">Less downtime</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-bold text-accent-600">$500K</div>
-                <div class="text-xs text-neutral-600">Annual savings</div>
-              </div>
-            </div>
-            
-            <a href="/contact?service=automation" class="btn-secondary w-full text-center">
-              Learn More
-            </a>
-          </div>
-        </div>
-        
-        <!-- Finance Case Study -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div class="h-48 bg-gradient-to-br from-secondary-100 to-secondary-200 flex items-center justify-center">
-            <span class="text-6xl">💰</span>
-          </div>
-          <div class="p-6">
-            <div class="inline-block bg-secondary-100 text-secondary-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-              Fintech
-            </div>
-            <h3 class="text-xl font-bold text-primary-800 mb-3">
-              Fraud Detection & Risk Assessment
-            </h3>
-            <p class="text-neutral-600 mb-4">
-              A fintech startup implemented AI-powered fraud detection, reducing false positives by 70% and improving detection accuracy.
-            </p>
-            
-            <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="text-center">
-                <div class="text-2xl font-bold text-secondary-600">70%</div>
-                <div class="text-xs text-neutral-600">Fewer false positives</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-bold text-primary-600">95%</div>
-                <div class="text-xs text-neutral-600">Detection accuracy</div>
-              </div>
-            </div>
-            
-            <a href="/contact?service=integration" class="btn-accent w-full text-center">
-              Learn More
-            </a>
-          </div>
-        </div>
-        
-        <!-- Retail Case Study -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div class="h-48 bg-gradient-to-br from-accent-100 to-accent-200 flex items-center justify-center">
-            <span class="text-6xl">🛍️</span>
-          </div>
-          <div class="p-6">
-            <div class="inline-block bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-              Retail
-            </div>
-            <h3 class="text-xl font-bold text-primary-800 mb-3">
-              Inventory Optimization
-            </h3>
-            <p class="text-neutral-600 mb-4">
-              A retail chain implemented AI-powered demand forecasting, reducing stockouts by 50% and improving inventory turnover.
-            </p>
-            
-            <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="text-center">
-                <div class="text-2xl font-bold text-accent-600">50%</div>
-                <div class="text-xs text-neutral-600">Fewer stockouts</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-bold text-secondary-600">25%</div>
-                <div class="text-xs text-neutral-600">Better turnover</div>
-              </div>
-            </div>
-            
-            <a href="/contact?service=automation" class="btn-primary w-full text-center">
-              Learn More
-            </a>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Results Summary -->
-  <section class="section-padding bg-white">
-    <div class="container-custom">
-      <div class="bg-gradient-to-br from-primary-800 to-primary-900 rounded-3xl p-8 md:p-12 text-white text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-8">
-          The Numbers Don't Lie
+  <!-- Tech Prowess Section -->
+  <section class="py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          Built with Enterprise-Grade <span class="text-accent-300">AI Technology</span>
         </h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <div class="text-4xl md:text-5xl font-bold text-accent-400 mb-2">50+</div>
-            <div class="text-primary-100">Businesses Transformed</div>
-          </div>
-          <div>
-            <div class="text-4xl md:text-5xl font-bold text-secondary-400 mb-2">40%</div>
-            <div class="text-primary-100">Average Efficiency Gain</div>
-          </div>
-          <div>
-            <div class="text-4xl md:text-5xl font-bold text-accent-400 mb-2">90</div>
-            <div class="text-primary-100">Days to Results</div>
-          </div>
-          <div>
-            <div class="text-4xl md:text-5xl font-bold text-secondary-400 mb-2">$2M+</div>
-            <div class="text-primary-100">Total Value Delivered</div>
-          </div>
+        <p class="text-xl text-primary-100 max-w-3xl mx-auto">
+          Every solution leverages cutting-edge AI frameworks, robust APIs, and scalable infrastructure to ensure maximum performance and reliability.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div class="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <div class="text-4xl mb-4">🧠</div>
+          <h3 class="text-xl font-bold mb-3">Advanced NLP</h3>
+          <p class="text-primary-200 text-sm">LangChain, OpenAI GPT-4, LLamaIndex for intelligent text processing and understanding</p>
+        </div>
+        <div class="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <div class="text-4xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold mb-3">Real-time APIs</h3>
+          <p class="text-primary-200 text-sm">Slack, Gmail, Jira, LinkedIn integration for seamless workflow automation</p>
+        </div>
+        <div class="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <div class="text-4xl mb-4">🔒</div>
+          <h3 class="text-xl font-bold mb-3">Secure Infrastructure</h3>
+          <p class="text-primary-200 text-sm">Google Cloud, PostgreSQL, Firebase with enterprise security standards</p>
+        </div>
+        <div class="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <div class="text-4xl mb-4">📱</div>
+          <h3 class="text-xl font-bold mb-3">Cross-Platform</h3>
+          <p class="text-primary-200 text-sm">React Native, FastAPI, Google Apps Script for universal accessibility</p>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <h3 class="text-2xl font-bold mb-6">Technology Stack We Master</h3>
+        <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">OpenAI GPT-4</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">LangChain</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">LLamaIndex</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">Pinecone</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">FastAPI</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">React Native</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">Google Cloud</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">PostgreSQL</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">Firebase</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">Slack API</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">Gmail API</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">Jira API</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">Twilio</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">Whisper</span>
+          <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm">YouTube Data API</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="section-padding bg-gradient-to-br from-secondary-800 to-secondary-900 text-white">
-    <div class="container-custom text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">
-        Ready to Join Our Success Stories?
+  <section class="py-20 bg-gradient-to-r from-accent-500 to-accent-600 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Ready to Build Your Success Story?
       </h2>
-      <p class="text-xl text-secondary-100 mb-8 max-w-2xl mx-auto">
-        Let's discuss how AI can transform your business operations and deliver measurable results like these.
+      <p class="text-xl text-accent-100 mb-8 leading-relaxed">
+        Join the companies that have transformed their operations with AI. 
+        Let's discuss how we can deliver measurable results for your business.
       </p>
       
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="/contact" class="btn-accent text-lg px-8 py-4">
-          Start Your AI Journey
+        <a href="/contact" class="bg-white text-accent-600 px-8 py-4 rounded-xl font-semibold hover:bg-accent-50 transition-colors text-lg shadow-lg">
+          Start Your Project
         </a>
-        <a href="/services" class="text-secondary-100 hover:text-white font-medium transition-colors">
-          Explore Our Services →
+        <a href="/services" class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors text-lg">
+          Explore Services
         </a>
+      </div>
+      
+      <div class="mt-8 text-accent-100">
+        <p class="text-sm">💬 Book a free consultation • ⚡ 48-hour project kickoff • 🚀 Measurable results guaranteed</p>
       </div>
     </div>
   </section>
