@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "npm run build && touch dist/.nojekyll",
+    "deploy:gh": "npm run build && touch dist/.nojekyll && echo 'Build complete. Push to main branch to deploy to flowstatelabs.ai'"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.4.2",
