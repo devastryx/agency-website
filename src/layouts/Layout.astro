@@ -10,7 +10,7 @@ export interface Props {
 
 const { 
   title, 
-  description = "Summit Craft - AI Solutions Agency. Real AI solutions that actually work for your business. Custom AI copilots, chatbots, and automation workflows.",
+  description = "Flow State Labs - AI Solutions Agency. Real AI solutions that actually work for your business. Custom AI copilots, chatbots, and automation workflows.",
   image = "/og-image.jpg",
   canonical 
 } = Astro.props;
@@ -50,13 +50,13 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Summit Craft",
+      "name": "Flow State Labs",
       "description": "AI Solutions Agency providing custom AI copilots, chatbots, and automation workflows",
-      "url": "https://summitcraft.ai",
-      "logo": "https://summitcraft.ai/logo.svg",
+      "url": "https://flowstatelabs.ai",
+      "logo": "https://flowstatelabs.ai/logo.svg",
       "sameAs": [
-        "https://linkedin.com/company/summitcraft",
-        "https://twitter.com/summitcraft"
+        "https://linkedin.com/company/flowstatelabs",
+        "https://twitter.com/flowstatelabs"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -74,7 +74,7 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
           <a href="/" class="flex items-center space-x-1 group">
-            <span class="text-xl font-bold text-black">Summit<sup class="text-xs text-gray-500">®</sup></span>
+            <span class="text-xl font-bold text-black">Flow State<sup class="text-xs text-gray-500">®</sup></span>
           </a>
           
           <!-- Desktop Navigation -->
@@ -117,7 +117,7 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
           <!-- Logo and Description -->
           <div class="col-span-1 md:col-span-2">
             <div class="flex items-center space-x-3 mb-4">
-              <span class="text-2xl font-bold text-black">Summit<sup class="text-xs text-gray-500">®</sup></span>
+              <span class="text-2xl font-bold text-black">Flow State<sup class="text-xs text-gray-500">®</sup></span>
             </div>
             <p class="text-gray-600 max-w-md">
               Real AI solutions that actually work for your business—built by experts, not experimenters.
@@ -149,7 +149,7 @@ const canonicalURL = canonical ? new URL(canonical, Astro.site) : Astro.url;
         <div class="border-t border-gray-200 mt-12 pt-8">
           <div class="flex flex-col md:flex-row justify-between items-center">
             <p class="text-gray-600 text-sm">
-              © 2024 Summit Craft. All rights reserved.
+              © 2024 Flow State Labs. All rights reserved.
             </p>
             <div class="flex space-x-6 mt-4 md:mt-0">
               <a href="#" class="text-gray-400 hover:text-gray-600 transition-colors">

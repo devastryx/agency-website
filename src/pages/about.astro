@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="About Us - Summit Craft | Expert AI Product Development Team">
+<Layout title="About Us - Flow State Labs | Expert AI Product Development Team">
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
     <div class="max-w-4xl mx-auto px-6 text-center">
@@ -29,7 +29,7 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="grid md:grid-cols-3 gap-8">
         <div class="text-center">
-          <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+          <div class="w-16 h-16 flex items-center justify-center mx-auto mb-6">
             <span class="text-2xl">🎯</span>
           </div>
           <h3 class="text-xl font-bold text-primary-800 mb-4">Results-Driven</h3>
@@ -75,8 +75,14 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
         <!-- Chandan Luthra -->
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div class="h-64 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
-            <div class="w-32 h-32 bg-primary-600 rounded-full flex items-center justify-center">
+          <div class="h-64 flex items-center justify-center">
+            <img 
+              src="/chandan.jpeg" 
+              alt="Chandan Luthra - Co-Founder & Chief Product Officer" 
+              class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="w-32 h-32 bg-primary-600 rounded-full flex items-center justify-center hidden">
               <span class="text-4xl font-bold text-white">CL</span>
             </div>
           </div>
@@ -84,13 +90,12 @@ import Layout from '../layouts/Layout.astro';
             <h3 class="text-2xl font-bold text-primary-800 mb-2">Chandan Luthra</h3>
             <div class="text-accent-600 font-medium mb-4">Co-Founder & Chief Product Officer</div>
             <p class="text-neutral-600 leading-relaxed mb-6">
-              BITS Pilani + IIM Lucknow alumnus, expert in product strategy, UX, and solving problems with precision. 
-              Ex CPO of a venture studio where he launched multiple AI ventures. Worked in Product teams of Amazon and Zomato.
+              Product leader with BITS Pilani + IIM Lucknow background. Ex CPO of a venture studio where he launched multiple AI ventures. Previously built consumer products at leading e-commerce and food-tech companies, driving growth for millions of users.
             </p>
             <div class="flex flex-wrap gap-2">
-              <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm">Product Strategy</span>
-              <span class="bg-secondary-100 text-secondary-800 px-3 py-1 rounded-full text-sm">UX Design</span>
-              <span class="bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-sm">AI Product Development</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Product Strategy</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">UX Design</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">AI Product Development</span>
             </div>
           </div>
         </div>
@@ -98,20 +103,26 @@ import Layout from '../layouts/Layout.astro';
         <!-- Puneet -->
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
           <div class="h-64 bg-gradient-to-br from-secondary-100 to-secondary-200 flex items-center justify-center">
-            <div class="w-32 h-32 bg-secondary-600 rounded-full flex items-center justify-center">
+            <img 
+              src="/puneet.jpeg" 
+              alt="Puneet Gupta- Co-Founder & Chief Technology Officer" 
+              class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="w-32 h-32 bg-secondary-600 rounded-full flex items-center justify-center hidden">
               <span class="text-4xl font-bold text-white">P</span>
             </div>
           </div>
           <div class="p-8">
-            <h3 class="text-2xl font-bold text-primary-800 mb-2">Puneet</h3>
+            <h3 class="text-2xl font-bold text-primary-800 mb-2">Puneet Gupta</h3>
             <div class="text-accent-600 font-medium mb-4">Co-Founder & Chief Technology Officer</div>
             <p class="text-neutral-600 leading-relaxed mb-6">
-              DTU + Georgia Tech alumnus, seasoned engineering leader skilled in building scalable AI systems and robust infrastructure.
+              Engineering leader with DTU + Georgia Tech background. Ex Director of Engineering at a venture studio, building technical foundations for multiple AI startups. Previously architected scalable systems at enterprise SaaS platforms and a Stanford-backed Voice AI startup.
             </p>
             <div class="flex flex-wrap gap-2">
-              <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm">AI Engineering</span>
-              <span class="bg-secondary-100 text-secondary-800 px-3 py-1 rounded-full text-sm">Scalable Systems</span>
-              <span class="bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-sm">Infrastructure</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">AI Engineering</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Scalable Systems</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Infrastructure</span>
             </div>
           </div>
         </div>
@@ -126,7 +137,7 @@ import Layout from '../layouts/Layout.astro';
       <p class="text-xl text-accent-100 mb-8">
         Let's discuss how our expertise can help you build AI solutions that actually deliver results.
       </p>
-      <a href="/contact" class="bg-white text-accent-600 px-8 py-4 rounded-xl font-semibold hover:bg-accent-50 transition-colors text-lg shadow-lg">
+      <a href="/contact" class="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors text-lg shadow-lg border-2 border-white">
         Start Your Project
       </a>
     </div>
