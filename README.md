@@ -76,7 +76,7 @@ npm run lint
 ```
 summit-craft-website/
 ├── public/                 # Static assets
-│   └── favicon.svg        # Site favicon
+│   └── favicon.png        # Site favicon
 ├── src/
 │   ├── layouts/           # Page layouts
 │   │   └── Layout.astro   # Main layout component

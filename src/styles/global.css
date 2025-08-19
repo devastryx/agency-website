@@ -120,7 +120,8 @@ p {
 }
 
 .animate-scroll {
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
+  will-change: transform;
 }
 
 .animate-scroll:hover {
@@ -169,3 +170,16 @@ a:focus {
 ::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
+
+/* Favicon rounding (limited browser support) */
+link[rel="icon"] {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Alternative approach using CSS custom properties */
+:root {
+  --favicon-size: 32px;
+}
+
+/* This is more of a fallback since most browsers don't support styling favicon links */

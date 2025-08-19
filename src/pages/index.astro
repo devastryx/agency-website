@@ -34,28 +34,23 @@ import Layout from '../layouts/Layout.astro';
         <div class="flex items-center gap-16 animate-scroll">
           <!-- Original AI/ML technologies as floating logos -->
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/langchain.com" alt="LangChain Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-lg font-semibold text-gray-700 hidden">LangChain</span>
+            <img src="/langchain-logo.png" alt="LangChain Logo" class="h-40 object-contain">
           </div>
           
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/langchain.com" alt="LangGraph Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-lg font-semibold text-gray-700 hidden">LangGraph</span>
+            <img src="/langgraph-logo.png" alt="LangGraph Logo" class="h-40 object-contain">
           </div>
           
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/openai.com" alt="OpenAI Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-lg font-semibold text-gray-700 hidden">OpenAI</span>
+            <img src="/openai-logo.png" alt="OpenAI Logo" class="h-8 object-contain">
           </div>
           
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/anthropic.com" alt="Anthropic Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-lg font-semibold text-gray-700 hidden">Anthropic</span>
+            <img src="/anthropic-logo.png" alt="Anthropic Logo" class="h-32 object-contain anthropic-logo">
           </div>
           
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/deepmind.com" alt="Gemini Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-lg font-semibold text-gray-700 hidden">Gemini</span>
+            <img src="/gemini-logo.png" alt="Gemini Logo" class="h-8 object-contain">
           </div>
           
           <div class="flex-shrink-0">
@@ -73,30 +68,25 @@ import Layout from '../layouts/Layout.astro';
             <span class="text-lg font-semibold text-gray-700 hidden">FAISS</span>
           </div>
           
-          <!-- Duplicate set for seamless loop -->
+          <!-- Duplicate set for seamless loop - NO GAP -->
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/langchain.com" alt="LangChain Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-lg font-semibold text-gray-700 hidden">LangChain</span>
+            <img src="/langchain-logo.png" alt="LangChain Logo" class="h-40 object-contain">
           </div>
           
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/langchain.com" alt="LangGraph Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-lg font-semibold text-gray-700 hidden">LangGraph</span>
+            <img src="/langgraph-logo.png" alt="LangGraph Logo" class="h-40 object-contain">
           </div>
           
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/openai.com" alt="OpenAI Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-lg font-semibold text-gray-700 hidden">OpenAI</span>
+            <img src="/openai-logo.png" alt="OpenAI Logo" class="h-8 object-contain">
           </div>
           
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/anthropic.com" alt="Anthropic Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-lg font-semibold text-gray-700 hidden">Anthropic</span>
+            <img src="/anthropic-logo.png" alt="Anthropic Logo" class="h-32 object-contain anthropic-logo">
           </div>
           
           <div class="flex-shrink-0">
-            <img src="https://logo.clearbit.com/deepmind.com" alt="Gemini Logo" class="h-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-lg font-semibold text-gray-700 hidden">Gemini</span>
+            <img src="/gemini-logo.png" alt="Gemini Logo" class="h-8 object-contain">
           </div>
           
           <div class="flex-shrink-0">
@@ -927,3 +917,54 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 </Layout>
+
+<style>
+  /* Custom Anthropic Logo Styling */
+  .anthropic-logo {
+    min-height: 5rem !important;
+    width: auto !important;
+    max-width: none !important;
+    transform: scale(1.2);
+  }
+  
+  /* Ensure all logos in credibility strip are properly sized */
+  .credibility-logos img {
+    object-fit: contain;
+    height: auto;
+  }
+
+  /* Enhanced infinite scroll animation */
+  .animate-scroll {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    animation: scroll 20s linear infinite;
+    will-change: transform;
+    white-space: nowrap;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Ensure smooth animation */
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+
+  /* Container setup for infinite scroll */
+  .overflow-hidden {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Ensure logos don't wrap and maintain consistent spacing */
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+</style>

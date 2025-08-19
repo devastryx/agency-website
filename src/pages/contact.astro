@@ -43,31 +43,57 @@ const service = url.searchParams.get('service');
             Fill out the form below and we'll get back to you within 24 hours to schedule your strategy call.
           </p>
           
-          <form class="space-y-6" id="contact-form">
+          <!-- Web3Forms Integration -->
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            id="form"
+            class="needs-validation space-y-6"
+            data-astro-reload
+            novalidate>
+            
+            <!-- Add your Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="e96ae875-ae71-4717-8030-0a58cc81878b" />
+            
+            <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
+            
+            <!-- Service Selection (if coming from service page) -->
+            {service && (
+              <input type="hidden" name="selected_service" value={service} />
+            )}
+            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label for="firstName" class="block text-sm font-medium text-neutral-700 mb-2">
                   First Name *
                 </label>
-                <input 
-                  type="text" 
-                  id="firstName" 
-                  name="firstName" 
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
                   required
                   class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
                 />
+                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide your first name.
+                </div>
               </div>
               <div>
                 <label for="lastName" class="block text-sm font-medium text-neutral-700 mb-2">
                   Last Name *
                 </label>
-                <input 
-                  type="text" 
-                  id="lastName" 
-                  name="lastName" 
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
                   required
                   class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
                 />
+                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                  Please provide your last name.
+                </div>
               </div>
             </div>
             
@@ -75,40 +101,54 @@ const service = url.searchParams.get('service');
               <label for="email" class="block text-sm font-medium text-neutral-700 mb-2">
                 Email Address *
               </label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
+              <input
+                id="email"
+                type="email"
+                placeholder="Email Address"
+                name="email"
                 required
                 class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
               />
+              <div class="empty-feedback text-red-400 text-sm mt-1">
+                Please provide your email address.
+              </div>
+              <div class="invalid-feedback text-red-400 text-sm mt-1">
+                Please provide a valid email address.
+              </div>
             </div>
             
             <div>
               <label for="company" class="block text-sm font-medium text-neutral-700 mb-2">
                 Company Name *
               </label>
-              <input 
-                type="text" 
-                id="company" 
-                name="company" 
+              <input
+                type="text"
+                id="company"
+                placeholder="Company Name"
+                name="company"
                 required
                 class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
               />
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please provide your company name.
+              </div>
             </div>
             
             <div>
               <label for="projectDetails" class="block text-sm font-medium text-neutral-700 mb-2">
                 Tell us about your project or goals *
               </label>
-              <textarea 
-                id="projectDetails" 
-                name="projectDetails" 
-                rows="4"
+              <textarea
+                id="projectDetails"
+                name="projectDetails"
                 required
-                class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
                 placeholder="Describe what you're looking to achieve with AI..."
+                rows="4"
+                class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
               ></textarea>
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please tell us about your project or goals.
+              </div>
             </div>
             
             <button 
@@ -181,12 +221,169 @@ const service = url.searchParams.get('service');
       </div>
     </div>
   </section>
+
+  <!-- Snackbar Container -->
+  <div id="snackbar" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50"></div>
 </Layout>
 
-<script>
-  document.getElementById('contact-form')?.addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you! We\'ll be in touch within 24 hours to schedule your strategy call.');
-    this.reset();
+<style>
+  .invalid-feedback,
+  .empty-feedback {
+    display: none;
+  }
+
+  .was-validated :placeholder-shown:invalid ~ .empty-feedback {
+    display: block;
+  }
+
+  .was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+    display: block;
+  }
+
+  .is-invalid,
+  .was-validated :invalid {
+    border-color: #dc3545;
+  }
+
+  /* Snackbar Styles */
+  .snackbar {
+    @apply flex items-center px-4 py-3 rounded-lg shadow-lg border max-w-sm mx-auto transition-all duration-300 ease-out transform;
+    animation: slideInUp 0.3s ease-out;
+  }
+
+  .snackbar.sending {
+    @apply bg-blue-600 border-blue-700 text-white;
+  }
+
+  .snackbar.success {
+    @apply bg-emerald-600 border-emerald-700 text-white;
+  }
+
+  .snackbar.error {
+    @apply bg-red-600 border-red-700 text-white;
+  }
+
+  .snackbar .icon {
+    @apply w-5 h-5 mr-3 flex-shrink-0;
+  }
+
+  .snackbar .content {
+    @apply flex items-center font-medium text-sm;
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translate(-50%, 100%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @keyframes slideOutDown {
+    from {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    to {
+      opacity: 0;
+      transform: translate(-50%, 100%);
+    }
+  }
+
+  .slide-out {
+    animation: slideOutDown 0.3s ease-in-out forwards;
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("form");
+    const snackbar = document.getElementById("snackbar");
+
+    function showSnackbar(type, message) {
+      const iconMap = {
+        sending: `<svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>`,
+        success: `<svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>`,
+        error: `<svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>`
+      };
+
+      const messageMap = {
+        sending: "Sending your message...",
+        success: message || "Message sent successfully!",
+        error: message || "Something went wrong! Please try again."
+      };
+
+      snackbar.innerHTML = `
+        <div class="snackbar ${type}">
+          <div class="content">
+            ${iconMap[type]}
+            <span>${messageMap[type]}</span>
+          </div>
+        </div>
+      `;
+    }
+
+    function hideSnackbar() {
+      const snackbarElement = snackbar.querySelector('.snackbar');
+      if (snackbarElement) {
+        snackbarElement.classList.add('slide-out');
+        setTimeout(() => {
+          snackbar.innerHTML = '';
+        }, 300);
+      }
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      form.classList.add("was-validated");
+      if (!form.checkValidity()) {
+        form.querySelectorAll(":invalid")[0].focus();
+        return;
+      }
+      
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      showSnackbar('sending');
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            showSnackbar('success', json.message);
+          } else {
+            console.log(response);
+            showSnackbar('error', json.message);
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          showSnackbar('error');
+        })
+        .then(function () {
+          form.reset();
+          form.classList.remove("was-validated");
+          setTimeout(() => {
+            hideSnackbar();
+          }, 4000);
+        });
+    });
   });
 </script>
