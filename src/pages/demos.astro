@@ -1,0 +1,254 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="AI Demos - See Our Solutions in Action | Flow State Labs">
+  <!-- Hero Section -->
+  <section class="section-padding">
+    <div class="container-custom text-center">
+      <div class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+        🎧 LIVE DEMOS
+      </div>
+      <h1 class="text-4xl font-bold text-black mb-4 leading-none tracking-tighter" style="font-size: 40px; font-weight: 700; line-height: 1em; letter-spacing: -0.04em;">
+        AI Solutions in Action
+      </h1>
+      <p class="text-2xl text-gray-500 mb-16 max-w-3xl mx-auto font-medium" style="font-size: 40px; font-weight: 700; line-height: 1em; letter-spacing: -0.04em; color: rgb(153, 153, 153);">
+        Hear how our AI works in real conversations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Voice Agent Demo Section -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-6">Voice Agent Demo</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Listen to a real conversation where our AI agent handles customer questions and books an appointment—naturally and effortlessly.
+        </p>
+      </div>
+
+      <!-- Demo Player Card -->
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-12 shadow-xl border border-blue-100">
+          <div class="text-center mb-8">
+            <div class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold mb-4">
+              🎙️ Dental Clinic Appointment Call
+            </div>
+            <p class="text-gray-700 text-lg">
+              Real conversation: Customer inquiries → Service questions → Appointment booked
+            </p>
+          </div>
+          
+          <!-- Audio Player -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg mb-8">
+            <audio controls class="w-full h-16 rounded-lg">
+              <source src="/dental-clinic-voice-demo.m4a" type="audio/mp4">
+              <source src="/dental-clinic-voice-demo.m4a" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p class="text-sm text-gray-500 text-center mt-4">
+              Duration: ~2 minutes | Real customer interaction
+            </p>
+          </div>
+
+          <!-- Demo Features -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="text-center p-4 bg-white rounded-xl shadow-sm">
+              <div class="text-2xl mb-2">📞</div>
+              <h4 class="font-semibold text-gray-800 mb-2">24/7 Availability</h4>
+              <p class="text-sm text-gray-600">Never miss a call, even after hours</p>
+            </div>
+            <div class="text-center p-4 bg-white rounded-xl shadow-sm">
+              <div class="text-2xl mb-2">⚡</div>
+              <h4 class="font-semibold text-gray-800 mb-2">Instant Response</h4>
+              <p class="text-sm text-gray-600">Zero wait times for customers</p>
+            </div>
+            <div class="text-center p-4 bg-white rounded-xl shadow-sm">
+              <div class="text-2xl mb-2">💰</div>
+              <h4 class="font-semibold text-gray-800 mb-2">Cost Effective</h4>
+              <p class="text-sm text-gray-600">Reduce staffing costs significantly</p>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact?service=voice-agent" class="bg-blue-600 text-white font-medium py-4 px-8 rounded-lg transition-all duration-200 hover:bg-blue-700 text-center">
+              Get Your Voice Agent
+            </a>
+            <a href="/case-studies" class="bg-white text-blue-600 font-medium py-4 px-8 rounded-lg border border-blue-600 transition-all duration-200 hover:bg-blue-50 text-center">
+              View Case Studies
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Demos Section -->
+  <section class="section-padding">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-6">More AI Solutions</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Explore different types of AI solutions we build for businesses
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- AI Copilot Demo Card -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-black mb-2">AI Copilots</h3>
+            <p class="text-gray-600 text-sm">Intelligent assistants that work alongside your team</p>
+          </div>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center text-sm text-gray-600">
+              <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+              Domain-specific training
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+              Real-time integration
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+              Enterprise security
+            </div>
+          </div>
+          <a href="/contact?service=ai-copilots" class="block w-full bg-blue-50 text-blue-600 font-medium py-3 px-4 rounded-lg text-center hover:bg-blue-100 transition-colors">
+            Learn More
+          </a>
+        </div>
+
+        <!-- Smart Chatbots Demo Card -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-black mb-2">Smart Chatbots</h3>
+            <p class="text-gray-600 text-sm">24/7 conversational AI for customer support</p>
+          </div>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center text-sm text-gray-600">
+              <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+              Lead qualification
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+              Multi-platform deployment
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+              Human handoff
+            </div>
+          </div>
+          <a href="/contact?service=chatbots" class="block w-full bg-green-50 text-green-600 font-medium py-3 px-4 rounded-lg text-center hover:bg-green-100 transition-colors">
+            Learn More
+          </a>
+        </div>
+
+        <!-- AI Automation Demo Card -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-black mb-2">AI Automation</h3>
+            <p class="text-gray-600 text-sm">Sophisticated multi-step AI workflows</p>
+          </div>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center text-sm text-gray-600">
+              <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+              Process mining
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+              Cross-platform integration
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+              Error handling
+            </div>
+          </div>
+          <a href="/contact?service=automation" class="block w-full bg-orange-50 text-orange-600 font-medium py-3 px-4 rounded-lg text-center hover:bg-orange-100 transition-colors">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customization Banner -->
+  <section class="section-padding bg-gradient-to-r from-green-500 to-emerald-600">
+    <div class="container-custom text-center">
+      <h2 class="text-4xl font-bold text-white mb-6">Built for Your Business</h2>
+      <p class="text-xl text-white opacity-90 mb-8 max-w-3xl mx-auto">
+        We customize every AI solution to match your brand, services, and workflows. 
+        Integrates with your calendar, CRM, and booking systems seamlessly.
+      </p>
+      <div class="bg-white bg-opacity-20 rounded-2xl p-6 max-w-md mx-auto">
+        <p class="text-white font-semibold text-lg">💳 Flexible pricing options to fit any budget</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="section-padding">
+    <div class="container-custom text-center">
+      <h2 class="text-4xl font-bold text-black mb-6">Want This For Your Business?</h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Get in touch and we'll create a custom AI solution tailored to your specific needs.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="bg-black text-white font-medium py-4 px-8 rounded-lg transition-all duration-200 hover:bg-gray-800">
+          Book a Strategy Call
+        </a>
+        <a href="/case-studies" class="bg-white text-black font-medium py-4 px-8 rounded-lg border border-black transition-all duration-200 hover:bg-gray-50">
+          View Success Stories
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Audio player styling */
+  audio {
+    background: #f8f9fa;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  audio::-webkit-media-controls-panel {
+    background-color: #f8f9fa;
+  }
+  
+  /* Demo card hover effects */
+  .demo-card {
+    transition: all 0.3s ease;
+  }
+  
+  .demo-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Gradient text effect */
+  .gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>
+

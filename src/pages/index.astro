@@ -14,6 +14,9 @@ import Layout from '../layouts/Layout.astro';
         <a href="/contact" class="bg-black text-white font-medium py-4 px-8 rounded-lg transition-all duration-200 hover:bg-gray-800">
           Book a Call
         </a>
+        <a href="/demos" class="bg-blue-600 text-white font-medium py-4 px-8 rounded-lg transition-all duration-200 hover:bg-blue-700">
+          🎧 See Demos
+        </a>
         <a href="/case-studies" class="bg-white text-black font-medium py-4 px-8 rounded-lg border border-black transition-all duration-200 hover:bg-gray-50">
           Success Stories
         </a>
@@ -123,6 +126,45 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <div class="text-4xl font-bold text-black mb-2">90</div>
           <div class="text-gray-600">Days to results</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Preview Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-black mb-4">Hear Our AI in Action</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Listen to a real conversation where our AI agent handles customer questions and books an appointment—naturally and effortlessly.
+        </p>
+      </div>
+      
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+          <div class="text-center mb-6">
+            <div class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+              🎙️ Dental Clinic Appointment Call
+            </div>
+            <p class="text-gray-600 text-sm">Real conversation: Customer inquiries → Service questions → Appointment booked</p>
+          </div>
+          
+          <!-- Audio Player Preview -->
+          <div class="bg-gray-50 rounded-xl p-6 mb-6">
+            <audio controls class="w-full h-12 rounded-lg">
+              <source src="/demos/dental-appointment-demo.mp3" type="audio/mpeg">
+              <source src="/demos/dental-appointment-demo.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p class="text-xs text-gray-500 text-center mt-2">Duration: ~2 minutes | Real customer interaction</p>
+          </div>
+          
+          <div class="text-center">
+            <a href="/demos" class="bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 hover:bg-blue-700">
+              View All Demos →
+            </a>
+          </div>
         </div>
       </div>
     </div>

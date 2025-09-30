@@ -222,8 +222,8 @@ const service = url.searchParams.get('service');
     </div>
   </section>
 
-  <!-- Snackbar Container -->
-  <div id="snackbar" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50"></div>
+  <!-- Modern Push Notification Container -->
+  <div id="notification-container" class="fixed top-4 right-4 z-50 space-y-3"></div>
 </Layout>
 
 <style>
@@ -245,101 +245,219 @@ const service = url.searchParams.get('service');
     border-color: #dc3545;
   }
 
-  /* Snackbar Styles */
-  .snackbar {
-    @apply flex items-center px-4 py-3 rounded-lg shadow-lg border max-w-sm mx-auto transition-all duration-300 ease-out transform;
-    animation: slideInUp 0.3s ease-out;
+  /* Modern Push Notification Styles */
+  .notification-card {
+    @apply bg-white border border-gray-200 rounded-xl shadow-2xl max-w-sm w-80 transform transition-all duration-500 ease-out;
+    animation: slideInRight 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
   }
 
-  .snackbar.sending {
-    @apply bg-blue-600 border-blue-700 text-white;
+  .notification-card.sending {
+    @apply border-blue-200 bg-gradient-to-r from-blue-50 to-blue-100;
+    box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.1), 0 10px 10px -5px rgba(59, 130, 246, 0.04);
   }
 
-  .snackbar.success {
-    @apply bg-emerald-600 border-emerald-700 text-white;
+  .notification-card.success {
+    @apply border-emerald-200 bg-gradient-to-r from-emerald-50 to-emerald-100;
+    box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.1), 0 10px 10px -5px rgba(16, 185, 129, 0.04);
   }
 
-  .snackbar.error {
-    @apply bg-red-600 border-red-700 text-white;
+  .notification-card.error {
+    @apply border-red-200 bg-gradient-to-r from-red-50 to-red-100;
+    box-shadow: 0 20px 25px -5px rgba(239, 68, 68, 0.1), 0 10px 10px -5px rgba(239, 68, 68, 0.04);
   }
 
-  .snackbar .icon {
-    @apply w-5 h-5 mr-3 flex-shrink-0;
+  .notification-header {
+    @apply flex items-center justify-between p-4 pb-3;
   }
 
-  .snackbar .content {
-    @apply flex items-center font-medium text-sm;
+  .notification-icon {
+    @apply w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0;
   }
 
-  @keyframes slideInUp {
+  .notification-card.sending .notification-icon {
+    @apply bg-blue-500 text-white;
+  }
+
+  .notification-card.success .notification-icon {
+    @apply bg-emerald-500 text-white;
+  }
+
+  .notification-card.error .notification-icon {
+    @apply bg-red-500 text-white;
+  }
+
+  .notification-close {
+    @apply w-6 h-6 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors cursor-pointer;
+  }
+
+  .notification-body {
+    @apply px-4 pb-4;
+  }
+
+  .notification-title {
+    @apply font-semibold text-gray-900 mb-1;
+  }
+
+  .notification-message {
+    @apply text-sm text-gray-600 leading-relaxed;
+  }
+
+  .notification-progress {
+    @apply h-1 bg-gray-200 rounded-full overflow-hidden mt-3;
+  }
+
+  .notification-progress-bar {
+    @apply h-full transition-all duration-100 ease-linear;
+  }
+
+  .notification-card.sending .notification-progress-bar {
+    @apply bg-blue-500;
+  }
+
+  .notification-card.success .notification-progress-bar {
+    @apply bg-emerald-500;
+  }
+
+  .notification-card.error .notification-progress-bar {
+    @apply bg-red-500;
+  }
+
+  @keyframes slideInRight {
     from {
       opacity: 0;
-      transform: translate(-50%, 100%);
+      transform: translateX(100%) scale(0.8);
     }
     to {
       opacity: 1;
-      transform: translate(-50%, 0);
+      transform: translateX(0) scale(1);
     }
   }
 
-  @keyframes slideOutDown {
+  @keyframes slideOutRight {
     from {
       opacity: 1;
-      transform: translate(-50%, 0);
+      transform: translateX(0) scale(1);
     }
     to {
       opacity: 0;
-      transform: translate(-50%, 100%);
+      transform: translateX(100%) scale(0.8);
     }
   }
 
   .slide-out {
-    animation: slideOutDown 0.3s ease-in-out forwards;
+    animation: slideOutRight 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  }
+
+  /* Hover effects */
+  .notification-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    #notification-container {
+      @apply top-2 right-2 left-2;
+    }
+    
+    .notification-card {
+      @apply w-full max-w-none;
+    }
   }
 </style>
 
 <script is:inline>
   document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("form");
-    const snackbar = document.getElementById("snackbar");
+    const notificationContainer = document.getElementById("notification-container");
 
-    function showSnackbar(type, message) {
+    function createNotification(type, message, title) {
       const iconMap = {
-        sending: `<svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        sending: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>`,
-        success: `<svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        success: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>`,
-        error: `<svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        error: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>`
       };
 
-      const messageMap = {
-        sending: "Sending your message...",
-        success: message || "Message sent successfully!",
-        error: message || "Something went wrong! Please try again."
+      const titleMap = {
+        sending: "Sending Message",
+        success: "Success!",
+        error: "Oops! Something went wrong"
       };
 
-      snackbar.innerHTML = `
-        <div class="snackbar ${type}">
-          <div class="content">
+      const messageMap = {
+        sending: "We're sending your message...",
+        success: message || "Your message has been sent successfully! We'll get back to you within 24 hours.",
+        error: message || "There was an issue sending your message. Please try again or contact us directly."
+      };
+
+      const notificationId = 'notification-' + Date.now();
+      const notification = document.createElement('div');
+      notification.id = notificationId;
+      notification.className = `notification-card ${type}`;
+      
+      notification.innerHTML = `
+        <div class="notification-header">
+          <div class="notification-icon">
             ${iconMap[type]}
-            <span>${messageMap[type]}</span>
+          </div>
+          <button class="notification-close" onclick="this.closest('.notification-card').remove()">
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="notification-body">
+          <div class="notification-title">${titleMap[type]}</div>
+          <div class="notification-message">${messageMap[type]}</div>
+          <div class="notification-progress">
+            <div class="notification-progress-bar" style="width: 100%"></div>
           </div>
         </div>
       `;
+
+      notificationContainer.appendChild(notification);
+
+      // Auto-dismiss functionality with progress bar
+      if (type !== 'sending') {
+        const progressBar = notification.querySelector('.notification-progress-bar');
+        const duration = 5000; // 5 seconds
+        const interval = 50; // Update every 50ms
+        const step = interval / duration;
+        let progress = 1;
+
+        const progressInterval = setInterval(() => {
+          progress -= step;
+          progressBar.style.width = (progress * 100) + '%';
+          
+          if (progress <= 0) {
+            clearInterval(progressInterval);
+            dismissNotification(notification);
+          }
+        }, interval);
+      }
+
+      return notification;
     }
 
-    function hideSnackbar() {
-      const snackbarElement = snackbar.querySelector('.snackbar');
-      if (snackbarElement) {
-        snackbarElement.classList.add('slide-out');
-        setTimeout(() => {
-          snackbar.innerHTML = '';
-        }, 300);
-      }
+    function dismissNotification(notification) {
+      notification.classList.add('slide-out');
+      setTimeout(() => {
+        if (notification.parentNode) {
+          notification.remove();
+        }
+      }, 500);
+    }
+
+    function showNotification(type, message, title) {
+      return createNotification(type, message, title);
     }
 
     form.addEventListener("submit", function (e) {
@@ -354,7 +472,7 @@ const service = url.searchParams.get('service');
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
 
-      showSnackbar('sending');
+      const sendingNotification = showNotification('sending');
 
       fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -367,22 +485,23 @@ const service = url.searchParams.get('service');
         .then(async (response) => {
           let json = await response.json();
           if (response.status == 200) {
-            showSnackbar('success', json.message);
+            // Remove sending notification and show success
+            sendingNotification.remove();
+            showNotification('success', json.message);
           } else {
             console.log(response);
-            showSnackbar('error', json.message);
+            sendingNotification.remove();
+            showNotification('error', json.message);
           }
         })
         .catch((error) => {
           console.log(error);
-          showSnackbar('error');
+          sendingNotification.remove();
+          showNotification('error');
         })
         .then(function () {
           form.reset();
           form.classList.remove("was-validated");
-          setTimeout(() => {
-            hideSnackbar();
-          }, 4000);
         });
     });
   });
